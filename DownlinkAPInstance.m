@@ -372,28 +372,24 @@ classdef DownlinkAPInstance < handle
             end
         
             
-            % use Kroneckerproduct
+            % use Kronecker product
             %Psi = kron(eye(obj.n_state), ones(1, obj.n_action));
         end
         
         function [Pv] = constructPv(obj)
             
-            tic;
+%             %use loop to contruct PV, consume a lot of time!!
+%             Pv = zeros(obj.n_state_action, obj.n_state, obj.period_lcm);
+%             for hh=1:obj.period_lcm
+%                 for idx=1:obj.n_state_action
+%                     [state,action]=obj.getStateActionFromIdx(idx);
+%                     for next_state=1:obj.n_state
+%                         Pv(idx,next_state,hh) = obj.getTransitionProbability(hh+obj.period_lcm,state,action,next_state);
+%                     end
+%                 end
+%             end
+            
             Pv = zeros(obj.n_state_action, obj.n_state, obj.period_lcm);
-            for hh=1:obj.period_lcm
-                for idx=1:obj.n_state_action
-                    [state,action]=obj.getStateActionFromIdx(idx);
-                    for next_state=1:obj.n_state
-                        Pv(idx,next_state,hh) = obj.getTransitionProbability(hh+obj.period_lcm,state,action,next_state);
-                    end
-                end
-            end
-            fprintf('elpased time for loop in constructPv\n');
-            toc;
-            
-            
-            tic;
-            Pv2 = zeros(obj.n_state_action, obj.n_state, obj.period_lcm);
             for hh=1:obj.period_lcm
                 %tranition matrix for flow 1-kk for each individual action
                 current_Pv = cell(obj.n_action,1);
@@ -434,14 +430,9 @@ classdef DownlinkAPInstance < handle
                 %"shufflw the row of current_Pv such that its indicies are in
                 %line with the state_action representation
                 for aa=1:obj.n_action
-                    Pv2(aa:obj.n_action:end, :, hh) = current_Pv{aa};
+                    Pv(aa:obj.n_action:end, :, hh) = current_Pv{aa};
                 end
             end
-            
-            fprintf('elpased time for kron in constructPv\n');
-            toc;
-            
-            isequal(Pv, Pv2)
         end
         
         function [theta] = constructTheta(obj)

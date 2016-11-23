@@ -1,7 +1,7 @@
 %% show the efficiency ratio of our RAC-Approx solution for frame-synchronized traffic pattern
 clear all; close all;
 
-n_flow = 4;
+n_flow = 6;
 
 flow1 = NonOverlappedFlowInstance();
 %flow1 = FlowInstance();
@@ -12,10 +12,10 @@ flow1.arrival_prob = 0.5;
 flow1.success_prob = 0.8;
 flow1.constructEverything();
 
-%flow2 = NonOverlappedFlowInstance();
-flow2 = FlowInstance();
+flow2 = NonOverlappedFlowInstance();
+%flow2 = FlowInstance();
 flow2.offset = 1;
-flow2.period = 2;
+flow2.period = 3;
 flow2.delay = 3;
 flow2.arrival_prob = 0.5;
 flow2.success_prob = 0.6;
