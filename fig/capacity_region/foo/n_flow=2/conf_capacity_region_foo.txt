@@ -1,0 +1,4 @@
+
+Flow 1: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 2: (offset, period, delay, success_prob) = (0, 4, 3, 0.500000), arrival_prob = (1.000000, )

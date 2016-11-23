@@ -1,0 +1,24 @@
+
+Flow 1: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 2: (offset, period, delay, success_prob) = (0, 4, 3, 0.500000), arrival_prob = (1.000000, )
+
+weighted_sum, utility_coeff=[0.999990,0.000010,]
+
+Finish getOptimalSolutionRAC with time 2.188240 seconds
+
+Finish getApproximateSolutionRAC with time 0.730126 seconds
+
+Finish RACSchedule with time 4.248414 seconds
+
+Finish RelaxedRACSchedule with time 5.517116 seconds
+
+Finish EPDF with time 5.694980 seconds
+
+Finish LLDF with time 5.443357 seconds
+
+Finish EPDF with M =10, with time 5.481905 seconds
+
+Finish EPDF with M =100, with time 5.690023 seconds
+
+Finish EPDF with M =1000, with time 6.002557 seconds

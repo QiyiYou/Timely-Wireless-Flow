@@ -1,0 +1,5 @@
+
+Flow 1: (offset, period, delay, success_prob) = (0, 1, 3, 0.800000), arrival_prob = 0.700000, , W=0.800000
+
+Rec_optimal_throughput_per_flow=
+0.000000

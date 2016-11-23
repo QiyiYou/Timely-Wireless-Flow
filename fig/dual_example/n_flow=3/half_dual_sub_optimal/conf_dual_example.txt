@@ -1,0 +1,16 @@
+
+Flow 1: (offset, period, delay, arrival_prob, success_prob) = (0, 5, 3, 1.000000, 0.600000), )
+
+Flow 2: (offset, period, delay, arrival_prob, success_prob) = (1, 5, 5, 1.000000, 0.400000), )
+
+Flow 3: (offset, period, delay, arrival_prob, success_prob) = (0, 5, 4, 1.000000, 0.250000), )
+
+weighted_log_sum, utility_coeff=[0.166667,0.388889,0.444444,]
+
+Finish getOptimalSolutionRAC with time 8.016919 seconds
+
+Finish getFullDualDistributedSolution_v with time 40.368679 seconds
+
+Finish fullDualSchedule with time 21.113836 seconds
+
+Finish halfDualSchedule2 with time 57.312932 seconds

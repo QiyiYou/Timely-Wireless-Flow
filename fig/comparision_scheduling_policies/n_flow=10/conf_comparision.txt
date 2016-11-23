@@ -1,0 +1,20 @@
+
+Flow 1: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 2: (offset, period, delay, success_prob) = (2, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 3: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 4: (offset, period, delay, success_prob) = (2, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 5: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 6: (offset, period, delay, success_prob) = (2, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 7: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 8: (offset, period, delay, success_prob) = (2, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 9: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 10: (offset, period, delay, success_prob) = (2, 4, 4, 0.500000), arrival_prob = (1.000000, )

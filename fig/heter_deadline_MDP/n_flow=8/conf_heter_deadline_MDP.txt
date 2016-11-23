@@ -1,0 +1,18 @@
+
+Flow 1: (offset, period, delay, success_prob) = (0, 10, 3, 0.840000), arrival_prob = (1.000000, )
+
+Flow 2: (offset, period, delay, success_prob) = (0, 10, 3, 0.920000), arrival_prob = (1.000000, )
+
+Flow 3: (offset, period, delay, success_prob) = (0, 10, 6, 0.210000), arrival_prob = (1.000000, )
+
+Flow 4: (offset, period, delay, success_prob) = (0, 10, 6, 0.930000), arrival_prob = (1.000000, )
+
+Flow 5: (offset, period, delay, success_prob) = (0, 10, 6, 0.670000), arrival_prob = (1.000000, )
+
+Flow 6: (offset, period, delay, success_prob) = (0, 10, 10, 0.180000), arrival_prob = (1.000000, )
+
+Flow 7: (offset, period, delay, success_prob) = (0, 10, 10, 0.350000), arrival_prob = (1.000000, )
+
+Flow 8: (offset, period, delay, success_prob) = (0, 10, 10, 0.590000), arrival_prob = (1.000000, )
+
+weighted_sum, utility_coeff=[20.000000,7.000000,12.000000,5.000000,16.000000,6.000000,11.000000,14.000000,]

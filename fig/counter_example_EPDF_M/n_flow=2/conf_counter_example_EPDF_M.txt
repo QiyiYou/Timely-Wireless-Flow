@@ -1,0 +1,16 @@
+
+Flow 1: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 2: (offset, period, delay, success_prob) = (0, 4, 3, 0.500000), arrival_prob = (1.000000, )
+
+weighted_sum, utility_coeff=[0.999990,0.000010,]
+
+Finish getOptimalSolutionRACFromFlowInstance_CVX with time 2.187602 seconds
+
+Finish EPDF with time 18.729082 seconds
+
+Finish EPDF with M =10, with time 17.820094 seconds
+
+Finish EPDF with M =100, with time 17.460527 seconds
+
+Finish EPDF with M =1000, with time 18.106017 seconds

@@ -1,0 +1,5 @@
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.800000, 0.500000)
+
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.800000, 0.500000)

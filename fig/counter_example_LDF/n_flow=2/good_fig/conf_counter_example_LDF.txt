@@ -1,0 +1,43 @@
+
+Flow 1: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+Flow 2: (offset, period, delay, success_prob) = (2, 4, 4, 0.500000), arrival_prob = (1.000000, )
+
+weighted_sum, utility_coeff=[0.500000,0.500000,]
+
+Finish getOptimalSolutionRACFromFlowInstance_CVX with time 2.571991 seconds
+tt=4
+optimal_policy(4,1)=1, optimal_reward(4,1)=0.000000
+optimal_policy(4,2)=2, optimal_reward(4,2)=0.250000
+optimal_policy(4,3)=1, optimal_reward(4,3)=0.250000
+optimal_policy(4,4)=1, optimal_reward(4,4)=0.250000
+tt=3
+optimal_policy(3,1)=1, optimal_reward(3,1)=0.000000
+optimal_policy(3,2)=2, optimal_reward(3,2)=0.375000
+optimal_policy(3,3)=1, optimal_reward(3,3)=0.375000
+optimal_policy(3,4)=1, optimal_reward(3,4)=0.500000
+tt=2
+optimal_policy(2,1)=1, optimal_reward(2,1)=0.375000
+optimal_policy(2,2)=2, optimal_reward(2,2)=0.625000
+optimal_policy(2,3)=1, optimal_reward(2,3)=0.687500
+optimal_policy(2,4)=2, optimal_reward(2,4)=0.750000
+tt=1
+optimal_policy(1,1)=1, optimal_reward(1,1)=0.375000
+optimal_policy(1,2)=2, optimal_reward(1,2)=0.625000
+optimal_policy(1,3)=1, optimal_reward(1,3)=0.781250
+optimal_policy(1,4)=2, optimal_reward(1,4)=0.937500
+finish fullBackwardInduction with elapsed time 0.271894
+
+Finish getApproximateSolutionRACFromFlowInstance_CVX with time 1.103357 seconds
+
+Finish RACSchedule with time 5.442748 seconds
+
+Finish RACSchedule with time 4.132980 seconds
+
+Finish RelaxedRACSchedule with time 5.903406 seconds
+
+Finish EPDF with time 6.307719 seconds
+
+Finish LDF with time 6.361823 seconds
+
+Finish LLDF with time 6.421237 seconds
