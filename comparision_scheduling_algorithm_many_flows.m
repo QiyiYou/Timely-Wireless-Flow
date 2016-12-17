@@ -8,7 +8,7 @@ rng shuffle
 cvx_solver SeDuMi 
 cvx_save_prefs
 
-n_flow=6
+n_flow=8
 filePath = sprintf('fig/comparision_scheduling_policies_many_flows/n_flow=%d',n_flow);
 
 %find the next number for the configuration file
@@ -43,6 +43,7 @@ for nn=1:n_instance
     fprintf(fileID, '====================================================================\n');
     fprintf(fileID, '\nInstance %d\n', nn);
 
+    %% construct the flow instance
     flow_array = cell(n_flow,1);
     for ii=1:n_flow
         flow = NonOverlappedFlowInstance();
@@ -79,19 +80,9 @@ for nn=1:n_instance
     end
     fprintf(fileID, ']\n');
     
-    tic;
-    [optimal_policy_RAC, optimal_utility_RAC, optimal_throughput_per_flow_RAC, status] = ...
-        getOptimalSolutionRAC_v(obj, utility_coeff, utility_form);
-    fprintf(fileID, '\nFinish getOptimalSolutionRAC with time %f seconds\n', toc);
-    fprintf(fileID, '\nstatus=%s\n', status);
-    
-    status
-    if(~strcmp(status, 'Solved'))
-        fprintf('getOptimalSolutionRAC_v not solved, igonre this instance\n');
-        continue;
-    end
-    
-    
+    %% solve the optimization problems RAC and RAC-Approx
+    %first solve getApproximateSolutionRAC, if status is not Solved, we can
+    %terminate soon
     tic;
     [optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx, optimal_utility_RAC_approx, optimal_throughput_per_flow_RAC_approx, status] = ...
         getApproximateSolutionRAC(obj, utility_coeff, utility_form);
@@ -105,30 +96,27 @@ for nn=1:n_instance
         continue;
     end
     
-    pause();
+    
+    tic;
+    [optimal_policy_RAC, optimal_utility_RAC, optimal_throughput_per_flow_RAC, status] = ...
+        getOptimalSolutionRAC_v(obj, utility_coeff, utility_form);
+    fprintf(fileID, '\nFinish getOptimalSolutionRAC with time %f seconds\n', toc);
+    fprintf(fileID, '\nstatus=%s\n', status);
+    
+    status
+    if(~strcmp(status, 'Solved'))
+        fprintf('getOptimalSolutionRAC_v not solved, igonre this instance\n');
+        continue;
+    end
+        
     
     %RAC or RAC_Approx are not correctly solved
     if(sum(isnan(optimal_throughput_per_flow_RAC)) > 0 || sum(isnan(optimal_throughput_per_flow_RAC_approx)) > 0)
         fprintf('RAC or RAC_Approx are not correctly solved\n');
         continue;
     end
-   
-    fprintf('begin to do RACSchedule...\n');
-    %for both NUM and fesiblity-fulfilling
-    tic;
-    [successful_transmission_RAC, state_action_distribution_RAC, system_state_RAC, system_action_RAC, state_action_per_slot_RAC ] ...
-        = RACSchedule(obj, T, optimal_policy_RAC);
-    fprintf(fileID, '\nFinish RACSchedule with time %f seconds\n', toc);
     
-    
-    fprintf('begin to do RelaxedRACSchedule...\n');
-    %for NUM
-    tic;
-    [successful_transmission_RAC_approx, state_action_distribution_RAC_approx, system_state_RAC_approx, system_action_RAC_approx, state_action_per_slot_RAC_approx] ...
-        = RelaxedRACSchedule(obj, T, optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx);
-    fprintf(fileID, '\nFinish RelaxedRACSchedule for NUM with time %f seconds\n', toc);
-    
-    
+       
     epsilon = 0;
     %strict_throughput_per_flow = max(throughput_per_flow - epsilon, 0);
     % let us use optimal throughput from RAC optmization problem
@@ -145,6 +133,25 @@ for nn=1:n_instance
         fprintf('getApproximateSolutionRAC_given_rate not solved, igonre this instance\n');
         continue;
     end
+    
+    
+    %% doing scheduling
+    fprintf('begin to do RACSchedule...\n');
+    %for both NUM and fesiblity-fulfilling
+    tic;
+    [successful_transmission_RAC, state_action_distribution_RAC, system_state_RAC, system_action_RAC, state_action_per_slot_RAC ] ...
+        = RACSchedule(obj, T, optimal_policy_RAC);
+    fprintf(fileID, '\nFinish RACSchedule with time %f seconds\n', toc);
+    
+    
+    fprintf('begin to do RelaxedRACSchedule...\n');
+    %for NUM
+    tic;
+    [successful_transmission_RAC_approx, state_action_distribution_RAC_approx, system_state_RAC_approx, system_action_RAC_approx, state_action_per_slot_RAC_approx] ...
+        = RelaxedRACSchedule(obj, T, optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx);
+    fprintf(fileID, '\nFinish RelaxedRACSchedule for NUM with time %f seconds\n', toc);
+    
+ 
     
     fprintf('begin to do RelaxedRACSchedule for a given rate...\n');
     tic;
@@ -171,6 +178,7 @@ for nn=1:n_instance
         LLDF(obj, T, strict_throughput_per_flow);
     fprintf(fileID, '\nFinish LLDF with time %f seconds\n', toc);
     
+    %% get statistics of the scheduling
     empirical_rate_LDF = sum(successful_transmission_LDF,2)/T;
     empirical_rate_EPDF = sum(successful_transmission_EPDF,2)/T;
     empirical_rate_LLDF = sum(successful_transmission_LLDF,2)/T;
@@ -235,19 +243,20 @@ for nn=1:n_instance
     fprintf(fileID, '\nFinish this instance with time %f seconds\n', toc(begin_time_stamp));
 end
 
-% mean_delta_utility_RAC = mean(Rec_delta_utility_RAC)
-% mean_delta_utility_RAC_approx = mean(Rec_delta_utility_RAC_approx)
-% 
-% mean_delta_LDF = mean(Rec_delta_LDF)
-% mean_delta_EPDF = mean(Rec_delta_EPDF)
-% mean_delta_LLDF = mean(Rec_delta_LLDF)
-% mean_delta_RAC = mean(Rec_delta_RAC)
-% mean_delta_RAC_approx = mean(Rec_delta_RAC_approx)
+%% finally output the mean result and write to the mat file
+mean_delta_utility_RAC = mean(Rec_delta_utility_RAC)
+mean_delta_utility_RAC_approx = mean(Rec_delta_utility_RAC_approx)
 
-% fprintf(fileID, '\n mean_delta_utility_RAC=%f, \n mean_delta_utility_RAC_approx=%f', ...
-%     mean_delta_utility_RAC, mean_delta_utility_RAC_approx);
-% fprintf(fileID, '\n mean_delta_RAC=%f,  \n mean_delta_LLDF=%f, mean_delta_LDF=%f, \n mean_delta_RAC_approx=%f,\n mean_delta_EPDF=%f\n', ...
-%     mean_delta_RAC, mean_delta_LLDF, mean_delta_LDF, mean_delta_RAC_approx, mean_delta_EPDF);
+mean_delta_LDF = mean(Rec_delta_LDF)
+mean_delta_EPDF = mean(Rec_delta_EPDF)
+mean_delta_LLDF = mean(Rec_delta_LLDF)
+mean_delta_RAC = mean(Rec_delta_RAC)
+mean_delta_RAC_approx = mean(Rec_delta_RAC_approx)
+
+fprintf(fileID, '\n mean_delta_utility_RAC=%f, \n mean_delta_utility_RAC_approx=%f', ...
+    mean_delta_utility_RAC, mean_delta_utility_RAC_approx);
+fprintf(fileID, '\n mean_delta_RAC=%f,  \n mean_delta_LLDF=%f, mean_delta_LDF=%f, \n mean_delta_RAC_approx=%f,\n mean_delta_EPDF=%f\n', ...
+    mean_delta_RAC, mean_delta_LLDF, mean_delta_LDF, mean_delta_RAC_approx, mean_delta_EPDF);
 
 save(sprintf('%s/comparision_scheduling_flow_%d.mat',filePath,next_conf));
 

@@ -1,0 +1,18 @@
+n_flow=8, n_instance=1, T=100
+====================================================================
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.898019, 0.566442)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.767492, 0.039155)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 2, 0.550254, 0.081834)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.179130, 0.649334)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.955366, 0.457033)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 2, 0.065926, 0.511446)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.950029, 0.764056)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.899204, 0.539555)
+
+weighted_log_sum, utility_coeff=[0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,]
+
+Finish getApproximateSolutionRAC with time 107.280800 seconds
+
+status=Inaccurate/Solved
