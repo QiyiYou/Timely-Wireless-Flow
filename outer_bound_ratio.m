@@ -1,7 +1,11 @@
 %% show the efficiency ratio of our RAC-Approx solution for frame-synchronized traffic pattern
 clear all; close all;
 
-N_flow = 8
+%select gurobi to solve the LP, much faster than the default SDP3
+cvx_solver gurobi_3
+cvx_save_prefs 
+
+N_flow = 10
 
 filePath = sprintf('fig/outer_bound_ratio/N_flow=%d',N_flow);
 fileID = fopen(sprintf('%s/conf_outer_bound_ratio.txt',filePath),'w');
@@ -9,16 +13,16 @@ fileID = fopen(sprintf('%s/conf_outer_bound_ratio.txt',filePath),'w');
 flow1 = NonOverlappedFlowInstance();
 %flow1 = FlowInstance();
 flow1.offset = 0;
-flow1.period = 2;
-flow1.delay = 2;
+flow1.period = 3;
+flow1.delay = 3;
 flow1.arrival_prob = 0.5;
 flow1.success_prob = 0.8;
 flow1.constructEverything();
 
 flow2 = NonOverlappedFlowInstance();
-flow2.offset = 0;
-flow2.period = 2;
-flow2.delay = 2;
+flow2.offset = 1;
+flow2.period = 3;
+flow2.delay = 3;
 flow2.arrival_prob = 0.5;
 flow2.success_prob = 0.8;
 flow2.constructEverything();
@@ -26,7 +30,7 @@ flow2.constructEverything();
 
 ratio = zeros(N_flow,1);
 
-N_instance = 1
+N_instance = 1000
 
 fprintf(fileID, 'N_flow=%d, N_instance=%d\n', N_flow, N_instance);
 

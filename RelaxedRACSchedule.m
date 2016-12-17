@@ -47,11 +47,21 @@ for tt=1:T
         for kk=1:obj.n_flow
             state_aa_prob_temp = optimal_policy_RAC_relax(kk, first_period_slot, current_state_vec(kk),aa);
             state_prob_temp = sum(optimal_policy_RAC_relax(kk, first_period_slot, current_state_vec(kk),:));
-            action_prob(aa) = action_prob(aa)*state_aa_prob_temp/state_prob_temp;
+            if(state_prob_temp < 1e-9) %flow k will not be in this state
+                action_prob(aa) = 0;
+                break;
+            else
+                action_prob(aa) = action_prob(aa)*state_aa_prob_temp/state_prob_temp;
+             end
         end
     end
     %normalized to conditional distribution
-    action_prob = action_prob./sum(action_prob);
+    if(sum(action_prob) < 1e-9) %this is empty state, and sum(action_prob) = 0
+        action_prob = ones(1,obj.n_action)/obj.n_action;
+    else
+        action_prob = action_prob./sum(action_prob);
+    end
+    
     
     optimal_action = -1;
     prob_temp = rand;
@@ -61,14 +71,21 @@ for tt=1:T
                 optimal_action = 1;
                 break;
             end
-        end
-        % aa >= 2
-        if( prob_temp <= sum(action_prob(1:aa))  && ...
+        else % aa >= 2
+            if( prob_temp <= sum(action_prob(1:aa))  && ...
                 prob_temp > sum(action_prob(1:aa-1)))
-            optimal_action = aa;
-            break;
+                optimal_action = aa;
+                break;
+            end
         end
     end
+    
+    %for debug purpose
+    if(current_state_vec(optimal_action) == 1 && ~isequal(current_state_vec, ones(size(current_state_vec))))
+        fprintf('schedule an empty flow, but has a non-empty flow, non-work-conserving\n');
+        fprintf('sum(action_prob(current_state_vec == 1)=%f\n', sum(action_prob(current_state_vec == 1)));
+    end
+    
     if(optimal_action == -1)
         error('something wrong');
     end

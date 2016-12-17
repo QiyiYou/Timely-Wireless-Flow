@@ -1,4 +1,4 @@
-function [optimal_policy, optimal_utility, optimal_throughput_per_flow] = getOptimalSolutionRAC(obj, utility_coeff, utility_form)
+function [optimal_policy, optimal_utility, optimal_throughput_per_flow, status] = getOptimalSolutionRAC(obj, utility_coeff, utility_form)
 % use the RAC formulation (Proposition 4 in Mobihoc 2015) to get the
 % optimal utility, we can use either weighted sum or weithed log sum here
 % obj: DownlinkAPInstanceFromFlowInstance
@@ -108,6 +108,7 @@ cvx_begin
         fprintf('begin to solve the optimization problem\n');
 cvx_end
 
+status = cvx_status;
 optimal_policy = y;
 optimal_utility = Objective;
 optimal_throughput_per_flow = r;

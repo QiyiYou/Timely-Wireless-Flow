@@ -1,0 +1,2603 @@
+n_flow=8, n_instance 100
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.632359, 0.913376)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.964889, 0.957507)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.800280, 0.485376)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.959492, 0.792207)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.678735, 0.933993)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.171187, 0.655478)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.097132, 0.046171)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 2, 0.034446, 0.950222)
+
+weighted_log_sum, utility_coeff=[0.105733,0.091952,0.184482,0.191635,0.045034,0.118028,0.107382,0.155755,]
+
+Finish getOptimalSolutionRAC with time 1087.361764 seconds
+
+Finish getApproximateSolutionRAC with time 101.354009 seconds
+
+Finish RACSchedule with time 100.934028 seconds
+
+Finish RelaxedRACSchedule with time 133.643824 seconds
+
+Finish LDF with time 121.817787 seconds
+
+Finish EPDF with time 125.513534 seconds
+
+Finish LLDF with time 130.472222 seconds
+
+Instance 2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.134585, 0.247510)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.620171, 0.508499)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.515422, 0.297275)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 3, 0.973601, 0.066116)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.390834, 0.944901)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.295758, 0.751368)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.613871, 0.560601)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.663724, 0.881145)
+
+weighted_log_sum, utility_coeff=[0.223778,0.118226,0.111226,0.038561,0.127228,0.136834,0.116086,0.128061,]
+
+Finish getOptimalSolutionRAC with time 1584.440270 seconds
+
+Finish getApproximateSolutionRAC with time 91.527689 seconds
+
+Finish RACSchedule with time 100.993937 seconds
+
+Finish RelaxedRACSchedule with time 133.907558 seconds
+
+Finish LDF with time 122.917985 seconds
+
+Finish EPDF with time 129.404182 seconds
+
+Finish LLDF with time 129.983238 seconds
+
+Instance 3
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 4, 0.417021, 0.758427)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 2, 0.605371, 0.945136)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.521289, 0.856145)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.467869, 0.578594)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 4, 0.807468, 0.171715)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.326797, 0.870358)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.798624, 0.160213)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.118501, 0.668765)
+
+weighted_log_sum, utility_coeff=[0.144727,0.239540,0.081938,0.048744,0.209538,0.008089,0.185173,0.082250,]
+
+Finish getOptimalSolutionRAC with time 401.144678 seconds
+
+Finish getApproximateSolutionRAC with time 101.225334 seconds
+
+Finish RACSchedule with time 106.649337 seconds
+
+Finish RelaxedRACSchedule with time 133.680690 seconds
+
+Finish LDF with time 121.042040 seconds
+
+Finish EPDF with time 125.075108 seconds
+
+Finish LLDF with time 129.022374 seconds
+
+Instance 4
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 2, 0.983921, 0.918288)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.612587, 0.822090)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.994870, 0.572596)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.087516, 0.592385)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.064463, 0.605394)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.825124, 0.480168)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.047932, 0.796847)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.749574, 0.703405)
+
+weighted_log_sum, utility_coeff=[0.249192,0.142706,0.035757,0.238876,0.085424,0.012367,0.043801,0.191877,]
+
+Finish getOptimalSolutionRAC with time 478.711331 seconds
+
+Finish getApproximateSolutionRAC with time 86.807673 seconds
+
+Finish RACSchedule with time 101.087972 seconds
+
+Finish RelaxedRACSchedule with time 134.111299 seconds
+
+Finish LDF with time 121.829146 seconds
+
+Finish EPDF with time 125.018972 seconds
+
+Finish LLDF with time 129.136884 seconds
+
+Instance 5
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.661837, 0.338404)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.673817, 0.498218)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.784566, 0.072371)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.678564, 0.699906)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 4, 0.873252, 0.247075)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.505472, 0.563266)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.386390, 0.935210)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.847781, 0.916249)
+
+weighted_log_sum, utility_coeff=[0.022800,0.201227,0.242150,0.008551,0.185822,0.231910,0.010491,0.097048,]
+
+Finish getOptimalSolutionRAC with time 819.688599 seconds
+
+Finish getApproximateSolutionRAC with time 101.971068 seconds
+
+Finish RACSchedule with time 100.252134 seconds
+
+Finish RelaxedRACSchedule with time 133.792715 seconds
+
+Finish LDF with time 120.891381 seconds
+
+Finish EPDF with time 124.232463 seconds
+
+Finish LLDF with time 125.861511 seconds
+
+Instance 6
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 1, 0.357465, 0.034915)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.642816, 0.383081)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.297048, 0.377401)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.263654, 0.309070)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 2, 0.133218, 0.903063)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.648635, 0.711302)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.358214, 0.589987)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.536977, 0.539700)
+
+weighted_log_sum, utility_coeff=[0.025339,0.238309,0.095249,0.061260,0.168402,0.272842,0.057611,0.080988,]
+
+Finish getOptimalSolutionRAC with time 556.595883 seconds
+
+Finish getApproximateSolutionRAC with time 97.542111 seconds
+
+Finish RACSchedule with time 100.678932 seconds
+
+Finish RelaxedRACSchedule with time 134.506204 seconds
+
+Finish LDF with time 123.055558 seconds
+
+Finish EPDF with time 124.633985 seconds
+
+Finish LLDF with time 125.982508 seconds
+
+Instance 7
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 3, 0.822355, 0.230865)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 1, 0.553085, 0.415456)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.560071, 0.193482)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.427615, 0.898135)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.765398, 0.542713)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.472214, 0.991256)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.672096, 0.588547)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.878166, 0.149259)
+
+weighted_log_sum, utility_coeff=[0.026015,0.110234,0.182408,0.088887,0.104238,0.166088,0.144357,0.177773,]
+
+Finish getOptimalSolutionRAC with time 182.246808 seconds
+
+Finish getApproximateSolutionRAC with time 90.569176 seconds
+
+Finish RACSchedule with time 100.379017 seconds
+
+Finish RelaxedRACSchedule with time 133.728853 seconds
+
+Finish LDF with time 121.551733 seconds
+
+Finish EPDF with time 123.985613 seconds
+
+Finish LLDF with time 124.315719 seconds
+
+Instance 8
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.911526, 0.416930)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.983175, 0.805296)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.793990, 0.493290)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.151953, 0.331979)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.832116, 0.110582)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.582969, 0.109506)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.761465, 0.426369)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.890239, 0.273813)
+
+weighted_log_sum, utility_coeff=[0.030537,0.147514,0.028427,0.215025,0.078440,0.133922,0.157655,0.208481,]
+
+Finish getOptimalSolutionRAC with time 436.659308 seconds
+
+Finish getApproximateSolutionRAC with time 31.590260 seconds
+
+Finish RACSchedule with time 100.288932 seconds
+
+Finish RelaxedRACSchedule with time 134.776959 seconds
+
+Finish LDF with time 121.971524 seconds
+
+Finish EPDF with time 124.179921 seconds
+
+Finish LLDF with time 126.515145 seconds
+
+Instance 9
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 3, 0.536025, 0.268304)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 3, 0.759305, 0.907922)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.442412, 0.630739)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.590994, 0.100664)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.889491, 0.976234)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.107841, 0.828654)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.202302, 0.420453)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 1, 0.863852, 0.356278)
+
+weighted_log_sum, utility_coeff=[0.164962,0.056966,0.119529,0.237935,0.098664,0.008918,0.155258,0.157769,]
+
+Finish getOptimalSolutionRAC with time 313.152668 seconds
+
+Finish getApproximateSolutionRAC with time 105.879031 seconds
+
+Finish RACSchedule with time 100.052094 seconds
+
+Finish RelaxedRACSchedule with time 133.210909 seconds
+
+Finish LDF with time 121.141265 seconds
+
+Finish EPDF with time 123.705465 seconds
+
+Finish LLDF with time 126.670334 seconds
+
+Instance 10
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.659390, 0.044746)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.124746, 0.983985)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.906736, 0.445145)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.078203, 0.252949)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.017466, 0.952559)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.407592, 0.575995)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.721301, 0.418767)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.113372, 0.958592)
+
+weighted_log_sum, utility_coeff=[0.029690,0.176818,0.104380,0.020991,0.010298,0.231400,0.265302,0.161121,]
+
+Finish getOptimalSolutionRAC with time 298.129097 seconds
+
+Finish getApproximateSolutionRAC with time 32.552906 seconds
+
+Finish RACSchedule with time 100.978015 seconds
+
+Finish RelaxedRACSchedule with time 134.773147 seconds
+
+Finish LDF with time 122.647632 seconds
+
+Finish EPDF with time 124.599094 seconds
+
+Finish LLDF with time 129.653793 seconds
+
+Instance 11
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.321681, 0.712154)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.429134, 0.822126)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.549876, 0.594175)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.545411, 0.721370)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 4, 0.966363, 0.603614)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.497447, 0.547973)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.686852, 0.774171)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.806914, 0.488407)
+
+weighted_log_sum, utility_coeff=[0.013447,0.020802,0.206398,0.289120,0.098405,0.137884,0.005838,0.228107,]
+
+Finish getOptimalSolutionRAC with time 176.115799 seconds
+
+Finish getApproximateSolutionRAC with time 28.632022 seconds
+
+Finish RACSchedule with time 100.764923 seconds
+
+Finish RelaxedRACSchedule with time 142.191477 seconds
+
+Finish LDF with time 123.554939 seconds
+
+Finish EPDF with time 126.244914 seconds
+
+Finish LLDF with time 134.643807 seconds
+
+Instance 12
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 3, 0.053840, 0.008034)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.632641, 0.911599)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 4, 0.990862, 0.418915)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.134639, 0.459873)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.041699, 0.031906)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.121287, 0.175650)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.570058, 0.628238)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.696818, 0.779554)
+
+weighted_log_sum, utility_coeff=[0.163656,0.187819,0.188188,0.027841,0.088411,0.205037,0.015624,0.123423,]
+
+Finish getOptimalSolutionRAC with time 482.328987 seconds
+
+Finish getApproximateSolutionRAC with time 52.182053 seconds
+
+Finish RACSchedule with time 100.139863 seconds
+
+Finish RelaxedRACSchedule with time 133.556823 seconds
+
+Finish LDF with time 121.902022 seconds
+
+Finish EPDF with time 125.143456 seconds
+
+Finish LLDF with time 124.991972 seconds
+
+Instance 13
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.114763, 0.071180)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.423929, 0.466343)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.300299, 0.922438)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.819082, 0.287447)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.428629, 0.763010)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.555743, 0.837675)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.776892, 0.939237)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.598767, 0.970449)
+
+weighted_log_sum, utility_coeff=[0.167428,0.162946,0.035759,0.202223,0.165998,0.132665,0.116996,0.015985,]
+
+Finish getOptimalSolutionRAC with time 115.032905 seconds
+
+Finish getApproximateSolutionRAC with time 33.675319 seconds
+
+Finish RACSchedule with time 100.897412 seconds
+
+Finish RelaxedRACSchedule with time 134.352526 seconds
+
+Finish LDF with time 122.300687 seconds
+
+Finish EPDF with time 124.502083 seconds
+
+Finish LLDF with time 129.676061 seconds
+
+Instance 14
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.935694, 0.293086)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.039724, 0.463344)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 3, 0.309179, 0.744883)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.530684, 0.137089)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.221677, 0.433118)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.608044, 0.327386)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.381549, 0.272968)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.313399, 0.752192)
+
+weighted_log_sum, utility_coeff=[0.060124,0.019351,0.229731,0.231749,0.037194,0.006365,0.131490,0.283995,]
+
+Finish getOptimalSolutionRAC with time 32.582291 seconds
+
+Finish getApproximateSolutionRAC with time 23.656784 seconds
+
+Finish RACSchedule with time 101.425639 seconds
+
+Finish RelaxedRACSchedule with time 133.889120 seconds
+
+Finish LDF with time 124.089388 seconds
+
+Finish EPDF with time 123.433331 seconds
+
+Finish LLDF with time 125.407584 seconds
+
+Instance 15
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.380463, 0.903837)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.689542, 0.591435)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.571491, 0.482700)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 2, 0.634617, 0.373687)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.771652, 0.791392)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 2, 0.431000, 0.248471)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.672466, 0.874148)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.660362, 0.067819)
+
+weighted_log_sum, utility_coeff=[0.122179,0.248311,0.076352,0.056588,0.038913,0.001560,0.159316,0.296781,]
+
+Finish getOptimalSolutionRAC with time 334.337258 seconds
+
+Finish getApproximateSolutionRAC with time 116.317404 seconds
+
+Finish RACSchedule with time 100.397004 seconds
+
+Finish RelaxedRACSchedule with time 133.964494 seconds
+
+Finish LDF with time 121.458658 seconds
+
+Finish EPDF with time 124.318036 seconds
+
+Finish LLDF with time 125.591738 seconds
+
+Instance 16
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.696016, 0.074905)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.120322, 0.449701)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 2, 0.981175, 0.437173)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.414792, 0.255864)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.475566, 0.029629)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 2, 0.897564, 0.472620)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.119973, 0.758786)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.744380, 0.080132)
+
+weighted_log_sum, utility_coeff=[0.064546,0.205067,0.094847,0.033055,0.109390,0.071979,0.194302,0.226815,]
+
+Finish getOptimalSolutionRAC with time 161.031645 seconds
+
+Finish getApproximateSolutionRAC with time 33.397134 seconds
+
+Finish RACSchedule with time 100.021321 seconds
+
+Finish RelaxedRACSchedule with time 133.639527 seconds
+
+Finish LDF with time 121.711385 seconds
+
+Finish EPDF with time 123.583940 seconds
+
+Finish LLDF with time 123.789310 seconds
+
+Instance 17
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.377995, 0.800674)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.052699, 0.461055)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.772085, 0.387638)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 3, 0.836709, 0.306844)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.089096, 0.949684)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.654969, 0.883957)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.885544, 0.228152)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.153658, 0.492682)
+
+weighted_log_sum, utility_coeff=[0.212930,0.017891,0.098893,0.063088,0.174643,0.162594,0.127511,0.142450,]
+
+Finish getOptimalSolutionRAC with time 664.959391 seconds
+
+Finish getApproximateSolutionRAC with time 87.634056 seconds
+
+Finish RACSchedule with time 101.114702 seconds
+
+Finish RelaxedRACSchedule with time 133.626952 seconds
+
+Finish LDF with time 121.498178 seconds
+
+Finish EPDF with time 125.225668 seconds
+
+Finish LLDF with time 129.907340 seconds
+
+Instance 18
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.719107, 0.264366)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.804954, 0.234855)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 2, 0.296174, 0.952497)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.130303, 0.365066)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.737124, 0.459800)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.444890, 0.824404)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.844136, 0.661789)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 4, 0.324134, 0.257190)
+
+weighted_log_sum, utility_coeff=[0.095669,0.181792,0.106707,0.114534,0.121028,0.188536,0.113625,0.078110,]
+
+Finish getOptimalSolutionRAC with time 520.707608 seconds
+
+Finish getApproximateSolutionRAC with time 92.715040 seconds
+
+Finish RACSchedule with time 100.945434 seconds
+
+Finish RelaxedRACSchedule with time 138.206097 seconds
+
+Finish LDF with time 121.885883 seconds
+
+Finish EPDF with time 124.995828 seconds
+
+Finish LLDF with time 129.222348 seconds
+
+Instance 19
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 3, 0.516347, 0.067248)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.716730, 0.467020)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.185376, 0.129539)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.633164, 0.541888)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.540572, 0.452027)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.034652, 0.611206)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 3, 0.863312, 0.969714)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.007544, 0.545380)
+
+weighted_log_sum, utility_coeff=[0.106692,0.217895,0.134718,0.080382,0.227625,0.165952,0.044026,0.022710,]
+
+Finish getOptimalSolutionRAC with time 583.523189 seconds
+
+Finish getApproximateSolutionRAC with time 97.440982 seconds
+
+Finish RACSchedule with time 100.536313 seconds
+
+Finish RelaxedRACSchedule with time 133.565472 seconds
+
+Finish LDF with time 122.127507 seconds
+
+Finish EPDF with time 124.662076 seconds
+
+Finish LLDF with time 125.664406 seconds
+
+Instance 20
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 2, 0.408139, 0.478563)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.869096, 0.396313)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 2, 0.578232, 0.948117)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.941604, 0.629365)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 4, 0.822154, 0.740347)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.811885, 0.023991)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.089745, 0.401287)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.141075, 0.564709)
+
+weighted_log_sum, utility_coeff=[0.209732,0.004186,0.111218,0.042052,0.201613,0.130653,0.188643,0.111904,]
+
+Finish getOptimalSolutionRAC with time 413.893563 seconds
+
+Finish getApproximateSolutionRAC with time 107.466798 seconds
+
+Finish RACSchedule with time 101.132852 seconds
+
+Finish RelaxedRACSchedule with time 135.119039 seconds
+
+Finish LDF with time 122.004264 seconds
+
+Finish EPDF with time 124.692169 seconds
+
+Finish LLDF with time 126.692682 seconds
+
+Instance 21
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.289271, 0.770984)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 3, 0.595747, 0.804550)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.618402, 0.351007)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.411793, 0.032867)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.112820, 0.300696)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 3, 0.638636, 0.484296)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.288443, 0.673373)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.054814, 0.040511)
+
+weighted_log_sum, utility_coeff=[0.209167,0.167738,0.152161,0.128908,0.074491,0.014128,0.209151,0.044256,]
+
+Finish getOptimalSolutionRAC with time 253.383220 seconds
+
+Finish getApproximateSolutionRAC with time 133.544338 seconds
+
+Finish RACSchedule with time 100.792308 seconds
+
+Finish RelaxedRACSchedule with time 134.686090 seconds
+
+Finish LDF with time 124.104851 seconds
+
+Finish EPDF with time 132.893078 seconds
+
+Finish LLDF with time 124.708841 seconds
+
+Instance 22
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.927486, 0.995993)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.065512, 0.557947)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.147111, 0.426814)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.487080, 0.010117)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 1, 0.641095, 0.008554)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.040987, 0.144363)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.353949, 0.571486)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.826335, 0.361769)
+
+weighted_log_sum, utility_coeff=[0.220114,0.090682,0.084797,0.155947,0.150816,0.062049,0.134297,0.101299,]
+
+Finish getOptimalSolutionRAC with time 100.982453 seconds
+
+Finish getApproximateSolutionRAC with time 35.477979 seconds
+
+Finish RACSchedule with time 99.765223 seconds
+
+Finish RelaxedRACSchedule with time 133.080626 seconds
+
+Finish LDF with time 121.517628 seconds
+
+Finish EPDF with time 124.197600 seconds
+
+Finish LLDF with time 124.035004 seconds
+
+Instance 23
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.517332, 0.238352)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.023685, 0.910910)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.020524, 0.099098)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.543546, 0.152112)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.887088, 0.050978)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.367962, 0.188215)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 3, 0.387246, 0.338782)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.771585, 0.653372)
+
+weighted_log_sum, utility_coeff=[0.203764,0.039874,0.071226,0.223086,0.164666,0.146663,0.022508,0.128213,]
+
+Finish getOptimalSolutionRAC with time 2270.727684 seconds
+
+Finish getApproximateSolutionRAC with time 96.243908 seconds
+
+Finish RACSchedule with time 100.443872 seconds
+
+Finish RelaxedRACSchedule with time 133.865075 seconds
+
+Finish LDF with time 121.546694 seconds
+
+Finish EPDF with time 123.466673 seconds
+
+Finish LLDF with time 126.160533 seconds
+
+Instance 24
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 1, 0.770578, 0.967068)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.133560, 0.999128)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.198155, 0.262961)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.388058, 0.607129)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.553827, 0.989967)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.496079, 0.503937)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.218966, 0.857126)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.537938, 0.085689)
+
+weighted_log_sum, utility_coeff=[0.033520,0.125972,0.223023,0.095548,0.049609,0.112790,0.177717,0.181821,]
+
+Finish getOptimalSolutionRAC with time 355.814544 seconds
+
+Finish getApproximateSolutionRAC with time 94.039785 seconds
+
+Finish RACSchedule with time 100.622109 seconds
+
+Finish RelaxedRACSchedule with time 133.350879 seconds
+
+Finish LDF with time 121.627336 seconds
+
+Finish EPDF with time 124.217656 seconds
+
+Finish LLDF with time 126.992199 seconds
+
+Instance 25
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 4, 0.877075, 0.093635)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.864210, 0.775928)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.809401, 0.068790)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.705097, 0.792521)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.792438, 0.474696)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.826236, 0.046056)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.569018, 0.214168)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.521646, 0.649061)
+
+weighted_log_sum, utility_coeff=[0.119764,0.106413,0.125829,0.211643,0.031768,0.129632,0.106137,0.168815,]
+
+Finish getOptimalSolutionRAC with time 431.034074 seconds
+
+Finish getApproximateSolutionRAC with time 94.527901 seconds
+
+Finish RACSchedule with time 120.442173 seconds
+
+Finish RelaxedRACSchedule with time 182.228006 seconds
+
+Finish LDF with time 136.839277 seconds
+
+Finish EPDF with time 127.393609 seconds
+
+Finish LLDF with time 126.933258 seconds
+
+Instance 26
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.456303, 0.156822)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 5, 0.186968, 0.322225)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 3, 0.384438, 0.330162)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.782264, 0.979627)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.575730, 0.208360)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.079636, 0.147600)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.361338, 0.550337)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.851326, 0.355596)
+
+weighted_log_sum, utility_coeff=[0.193744,0.283458,0.023436,0.114070,0.138224,0.114067,0.087409,0.045592,]
+
+Finish getOptimalSolutionRAC with time 570.570263 seconds
+
+Finish getApproximateSolutionRAC with time 96.568301 seconds
+
+Finish RACSchedule with time 100.157095 seconds
+
+Finish RelaxedRACSchedule with time 134.428613 seconds
+
+Finish LDF with time 125.016357 seconds
+
+Finish EPDF with time 124.226847 seconds
+
+Finish LLDF with time 124.145094 seconds
+
+Instance 27
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.326642, 0.487953)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.987032, 0.047287)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 4, 0.645925, 0.313500)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.403908, 0.955361)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.741716, 0.418088)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.531752, 0.699862)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.000816, 0.449217)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.820236, 0.748030)
+
+weighted_log_sum, utility_coeff=[0.262209,0.208332,0.085013,0.038415,0.065292,0.043258,0.172349,0.125132,]
+
+Finish getOptimalSolutionRAC with time 1452.417717 seconds
+
+Finish getApproximateSolutionRAC with time 109.189226 seconds
+
+Finish RACSchedule with time 101.004396 seconds
+
+Finish RelaxedRACSchedule with time 134.770613 seconds
+
+Finish LDF with time 126.804843 seconds
+
+Finish EPDF with time 129.513132 seconds
+
+Finish LLDF with time 128.744511 seconds
+
+Instance 28
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.081841, 0.639057)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.635569, 0.504945)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.497861, 0.726474)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.453879, 0.141718)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.820520, 0.109453)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.469023, 0.089551)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.152316, 0.045558)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.509443, 0.881532)
+
+weighted_log_sum, utility_coeff=[0.038205,0.216287,0.236499,0.135148,0.112498,0.000085,0.044316,0.216963,]
+
+Finish getOptimalSolutionRAC with time 578.948544 seconds
+
+Finish getApproximateSolutionRAC with time 84.772285 seconds
+
+Finish RACSchedule with time 100.097068 seconds
+
+Finish RelaxedRACSchedule with time 133.491563 seconds
+
+Finish LDF with time 121.289792 seconds
+
+Finish EPDF with time 123.754995 seconds
+
+Finish LLDF with time 123.914024 seconds
+
+Instance 29
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.993616, 0.233823)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.617314, 0.926249)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.296897, 0.481493)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.253103, 0.572808)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.752975, 0.047440)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.385614, 0.497799)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.126112, 0.535522)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.735550, 0.889504)
+
+weighted_log_sum, utility_coeff=[0.220354,0.152626,0.135945,0.132585,0.138745,0.039327,0.179580,0.000838,]
+
+Finish getOptimalSolutionRAC with time 381.740010 seconds
+
+Finish getApproximateSolutionRAC with time 94.323841 seconds
+
+Finish RACSchedule with time 101.072058 seconds
+
+Finish RelaxedRACSchedule with time 133.479163 seconds
+
+Finish LDF with time 121.525365 seconds
+
+Finish EPDF with time 128.285985 seconds
+
+Finish LLDF with time 129.172308 seconds
+
+Instance 30
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.841506, 0.726728)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.226776, 0.227787)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.931977, 0.733395)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.313688, 0.584450)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.990374, 0.291553)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.557842, 0.994033)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.869933, 0.432353)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.822688, 0.963881)
+
+weighted_log_sum, utility_coeff=[0.215794,0.222797,0.139434,0.085112,0.013253,0.016712,0.267804,0.039094,]
+
+Finish getOptimalSolutionRAC with time 33.348075 seconds
+
+Finish getApproximateSolutionRAC with time 9.323138 seconds
+
+Finish RACSchedule with time 100.763863 seconds
+
+Finish RelaxedRACSchedule with time 134.158108 seconds
+
+Finish LDF with time 122.675853 seconds
+
+Finish EPDF with time 124.686190 seconds
+
+Finish LLDF with time 130.496996 seconds
+
+Instance 31
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.621937, 0.807309)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.966956, 0.828357)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.551890, 0.424740)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.944884, 0.797567)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.511249, 0.076325)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.247861, 0.088974)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.502407, 0.171798)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.522525, 0.605087)
+
+weighted_log_sum, utility_coeff=[0.057071,0.122079,0.105808,0.101419,0.043757,0.278092,0.285935,0.005840,]
+
+Finish getOptimalSolutionRAC with time 38.458190 seconds
+
+Finish getApproximateSolutionRAC with time 32.020121 seconds
+
+Finish RACSchedule with time 100.023570 seconds
+
+Finish RelaxedRACSchedule with time 133.613549 seconds
+
+Finish LDF with time 121.396924 seconds
+
+Finish EPDF with time 123.722352 seconds
+
+Finish LLDF with time 123.174573 seconds
+
+Instance 32
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 3, 0.329193, 0.250844)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.591025, 0.380050)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.818898, 0.004527)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.047409, 0.337968)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.453804, 0.129601)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.546840, 0.693013)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 2, 0.929557, 0.023753)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.913347, 0.467023)
+
+weighted_log_sum, utility_coeff=[0.124532,0.218264,0.244028,0.046869,0.076764,0.020543,0.192084,0.076916,]
+
+Finish getOptimalSolutionRAC with time 420.745379 seconds
+
+Finish getApproximateSolutionRAC with time 105.394993 seconds
+
+Finish RACSchedule with time 100.185475 seconds
+
+Finish RelaxedRACSchedule with time 133.451339 seconds
+
+Finish LDF with time 122.148680 seconds
+
+Finish EPDF with time 124.137798 seconds
+
+Finish LLDF with time 124.343060 seconds
+
+Instance 33
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.877159, 0.842620)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.143255, 0.157059)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.887613, 0.136719)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.698387, 0.682081)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.395015, 0.971301)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.312595, 0.220177)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 3, 0.830863, 0.609779)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.691234, 0.162916)
+
+weighted_log_sum, utility_coeff=[0.065340,0.083675,0.034916,0.049636,0.215847,0.056489,0.251241,0.242856,]
+
+Finish getOptimalSolutionRAC with time 376.875377 seconds
+
+Finish getApproximateSolutionRAC with time 29.902888 seconds
+
+Finish RACSchedule with time 100.736009 seconds
+
+Finish RelaxedRACSchedule with time 134.343683 seconds
+
+Finish LDF with time 122.012068 seconds
+
+Finish EPDF with time 125.441500 seconds
+
+Finish LLDF with time 129.078219 seconds
+
+Instance 34
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.339546, 0.350078)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.029955, 0.230670)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.794088, 0.130644)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.156099, 0.707180)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 3, 0.526247, 0.811022)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.025505, 0.579000)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.955844, 0.357798)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.218215, 0.006480)
+
+weighted_log_sum, utility_coeff=[0.137943,0.099442,0.113486,0.099895,0.184751,0.112514,0.072503,0.179466,]
+
+Finish getOptimalSolutionRAC with time 57.737621 seconds
+
+Finish getApproximateSolutionRAC with time 13.395674 seconds
+
+Finish RACSchedule with time 100.300512 seconds
+
+Finish RelaxedRACSchedule with time 133.605421 seconds
+
+Finish LDF with time 121.887711 seconds
+
+Finish EPDF with time 124.910135 seconds
+
+Finish LLDF with time 126.956095 seconds
+
+Instance 35
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.116581, 0.131843)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 2, 0.670451, 0.251764)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.637773, 0.251341)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.521748, 0.324847)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 4, 0.746524, 0.885167)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.276802, 0.800142)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.701663, 0.618779)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 3, 0.524547, 0.628757)
+
+weighted_log_sum, utility_coeff=[0.082962,0.015468,0.012055,0.083549,0.261338,0.128270,0.128430,0.287930,]
+
+Finish getOptimalSolutionRAC with time 615.630580 seconds
+
+Finish getApproximateSolutionRAC with time 94.976686 seconds
+
+Finish RACSchedule with time 100.522462 seconds
+
+Finish RelaxedRACSchedule with time 133.657888 seconds
+
+Finish LDF with time 122.047244 seconds
+
+Finish EPDF with time 124.927387 seconds
+
+Finish LLDF with time 127.938462 seconds
+
+Instance 36
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.213352, 0.204870)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 3, 0.527898, 0.585742)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.628496, 0.301962)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.593160, 0.420467)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.784336, 0.873504)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.287935, 0.529012)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.909843, 0.282443)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.165207, 0.732289)
+
+weighted_log_sum, utility_coeff=[0.086412,0.151418,0.009478,0.329928,0.017515,0.181229,0.055157,0.168864,]
+
+Finish getOptimalSolutionRAC with time 563.112300 seconds
+
+Finish getApproximateSolutionRAC with time 92.041638 seconds
+
+Finish RACSchedule with time 100.760967 seconds
+
+Finish RelaxedRACSchedule with time 133.634130 seconds
+
+Finish LDF with time 122.195962 seconds
+
+Finish EPDF with time 124.330749 seconds
+
+Finish LLDF with time 127.812682 seconds
+
+Instance 37
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.345362, 0.829257)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.224520, 0.723038)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.938610, 0.250932)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.011185, 0.142473)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.550876, 0.660553)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.477350, 0.012553)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.589050, 0.304941)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.556408, 0.452546)
+
+weighted_log_sum, utility_coeff=[0.051371,0.150015,0.101226,0.122051,0.164745,0.132859,0.192424,0.085310,]
+
+Finish getOptimalSolutionRAC with time 154.841597 seconds
+
+Finish getApproximateSolutionRAC with time 18.972597 seconds
+
+Finish RACSchedule with time 118.073683 seconds
+
+Finish RelaxedRACSchedule with time 149.879598 seconds
+
+Finish LDF with time 121.533823 seconds
+
+Finish EPDF with time 123.571095 seconds
+
+Finish LLDF with time 127.619290 seconds
+
+Instance 38
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.612371, 0.906240)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 1, 0.453411, 0.084969)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.259126, 0.680539)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.219263, 0.518588)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.643937, 0.647621)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.143467, 0.290484)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.176310, 0.886676)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.560650, 0.470312)
+
+weighted_log_sum, utility_coeff=[0.044714,0.317509,0.324280,0.093297,0.027467,0.040442,0.072596,0.079695,]
+
+Finish getOptimalSolutionRAC with time 359.540688 seconds
+
+Finish getApproximateSolutionRAC with time 94.693358 seconds
+
+Finish RACSchedule with time 100.586745 seconds
+
+Finish RelaxedRACSchedule with time 133.535591 seconds
+
+Finish LDF with time 121.179425 seconds
+
+Finish EPDF with time 123.999695 seconds
+
+Finish LLDF with time 126.300081 seconds
+
+Instance 39
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.112421, 0.489060)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.622073, 0.621153)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.700133, 0.427513)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.666408, 0.963388)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.399849, 0.810561)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.927866, 0.722317)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.051503, 0.572491)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.084754, 0.443942)
+
+weighted_log_sum, utility_coeff=[0.142093,0.163368,0.162675,0.063523,0.141397,0.134379,0.141874,0.050690,]
+
+Finish getOptimalSolutionRAC with time 88.097345 seconds
+
+Finish getApproximateSolutionRAC with time 9.853608 seconds
+
+Finish RACSchedule with time 101.342506 seconds
+
+Finish RelaxedRACSchedule with time 134.528206 seconds
+
+Finish LDF with time 123.001715 seconds
+
+Finish EPDF with time 127.318027 seconds
+
+Finish LLDF with time 133.017159 seconds
+
+Instance 40
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.316310, 0.300165)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.300872, 0.469346)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.318108, 0.317221)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.974421, 0.841260)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.018299, 0.161621)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.213754, 0.905296)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.427625, 0.792488)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.683481, 0.332949)
+
+weighted_log_sum, utility_coeff=[0.164237,0.173247,0.098817,0.092832,0.096474,0.061294,0.167419,0.145680,]
+
+Finish getOptimalSolutionRAC with time 720.101415 seconds
+
+Finish getApproximateSolutionRAC with time 94.556752 seconds
+
+Finish RACSchedule with time 105.230875 seconds
+
+Finish RelaxedRACSchedule with time 139.605730 seconds
+
+Finish LDF with time 121.457592 seconds
+
+Finish EPDF with time 124.227786 seconds
+
+Finish LLDF with time 126.403672 seconds
+
+Instance 41
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.402349, 0.227368)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.463940, 0.722617)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.727314, 0.461166)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.282625, 0.433576)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.191952, 0.964019)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 2, 0.660613, 0.829512)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.964733, 0.001562)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.817716, 0.863304)
+
+weighted_log_sum, utility_coeff=[0.001971,0.203330,0.026491,0.180248,0.160564,0.225915,0.136329,0.065152,]
+
+Finish getOptimalSolutionRAC with time 1044.048462 seconds
+
+Finish getApproximateSolutionRAC with time 120.327892 seconds
+
+Finish RACSchedule with time 100.199058 seconds
+
+Finish RelaxedRACSchedule with time 133.156471 seconds
+
+Finish LDF with time 121.103325 seconds
+
+Finish EPDF with time 123.924470 seconds
+
+Finish LLDF with time 128.321308 seconds
+
+Instance 42
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.191528, 0.151431)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.578205, 0.511087)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 3, 0.788892, 0.694958)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.759162, 0.740892)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 1, 0.480746, 0.235962)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.777667, 0.721344)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 1, 0.943972, 0.593098)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.330785, 0.526596)
+
+weighted_log_sum, utility_coeff=[0.067872,0.298623,0.001835,0.150548,0.058764,0.065689,0.312164,0.044505,]
+
+Finish getOptimalSolutionRAC with time 715.000045 seconds
+
+Finish getApproximateSolutionRAC with time 92.390130 seconds
+
+Finish RACSchedule with time 101.033438 seconds
+
+Finish RelaxedRACSchedule with time 134.397444 seconds
+
+Finish LDF with time 122.524546 seconds
+
+Finish EPDF with time 124.047870 seconds
+
+Finish LLDF with time 127.950845 seconds
+
+Instance 43
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 2, 0.733276, 0.932445)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.124510, 0.786287)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 2, 0.251885, 0.088851)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.314901, 0.682179)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.180433, 0.554782)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.592858, 0.888235)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 4, 0.413564, 0.402640)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.776712, 0.513585)
+
+weighted_log_sum, utility_coeff=[0.066385,0.134621,0.271947,0.102697,0.087740,0.069030,0.244024,0.023556,]
+
+Finish getOptimalSolutionRAC with time 414.568231 seconds
+
+Finish getApproximateSolutionRAC with time 94.507017 seconds
+
+Finish RACSchedule with time 100.257926 seconds
+
+Finish RelaxedRACSchedule with time 133.307245 seconds
+
+Finish LDF with time 121.585815 seconds
+
+Finish EPDF with time 124.663015 seconds
+
+Finish LLDF with time 128.879766 seconds
+
+Instance 44
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.251389, 0.518179)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.701635, 0.636511)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.991190, 0.571305)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.341169, 0.108718)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.290045, 0.023105)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.129116, 0.532109)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.218506, 0.124829)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.792076, 0.384238)
+
+weighted_log_sum, utility_coeff=[0.042043,0.018542,0.130219,0.175340,0.228667,0.230445,0.136562,0.038183,]
+
+Finish getOptimalSolutionRAC with time 46.540518 seconds
+
+Finish getApproximateSolutionRAC with time 14.414866 seconds
+
+Finish RACSchedule with time 99.469806 seconds
+
+Finish RelaxedRACSchedule with time 133.386041 seconds
+
+Finish LDF with time 121.374815 seconds
+
+Finish EPDF with time 123.526318 seconds
+
+Finish LLDF with time 124.873857 seconds
+
+Instance 45
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.725952, 0.969078)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.523716, 0.647178)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 2, 0.265851, 0.763278)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.817895, 0.727327)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.000172, 0.726181)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.409498, 0.525810)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.820929, 0.290931)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.661095, 0.391174)
+
+weighted_log_sum, utility_coeff=[0.092272,0.171248,0.083412,0.116200,0.177276,0.044865,0.053137,0.261590,]
+
+Finish getOptimalSolutionRAC with time 688.421502 seconds
+
+Finish getApproximateSolutionRAC with time 103.404582 seconds
+
+Finish RACSchedule with time 104.413645 seconds
+
+Finish RelaxedRACSchedule with time 141.645035 seconds
+
+Finish LDF with time 127.754031 seconds
+
+Finish EPDF with time 125.742420 seconds
+
+Finish LLDF with time 131.087608 seconds
+
+Instance 46
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.810718, 0.040906)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.629889, 0.547345)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.427358, 0.199039)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.151394, 0.386510)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.770071, 0.314060)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.811760, 0.251184)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 2, 0.163945, 0.388892)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.903222, 0.080370)
+
+weighted_log_sum, utility_coeff=[0.118776,0.194928,0.051879,0.149129,0.122417,0.095329,0.106322,0.161221,]
+
+Finish getOptimalSolutionRAC with time 211.057670 seconds
+
+Finish getApproximateSolutionRAC with time 32.334135 seconds
+
+Finish RACSchedule with time 99.851067 seconds
+
+Finish RelaxedRACSchedule with time 132.969949 seconds
+
+Finish LDF with time 123.393723 seconds
+
+Finish EPDF with time 127.882212 seconds
+
+Finish LLDF with time 128.816510 seconds
+
+Instance 47
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 2, 0.954101, 0.395711)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.460238, 0.472594)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.622854, 0.807052)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.857752, 0.819319)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.682858, 0.565349)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.091600, 0.176011)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.249946, 0.620969)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.297062, 0.148454)
+
+weighted_log_sum, utility_coeff=[0.176936,0.025652,0.175948,0.137293,0.083235,0.035521,0.194882,0.170534,]
+
+Finish getOptimalSolutionRAC with time 448.126093 seconds
+
+Finish getApproximateSolutionRAC with time 45.850333 seconds
+
+Finish RACSchedule with time 100.495648 seconds
+
+Finish RelaxedRACSchedule with time 133.413075 seconds
+
+Finish LDF with time 122.508444 seconds
+
+Finish EPDF with time 124.286305 seconds
+
+Finish LLDF with time 129.530096 seconds
+
+Instance 48
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 2, 0.368561, 0.690059)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.907174, 0.514552)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.209770, 0.498547)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.196981, 0.766568)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.960165, 0.956686)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.145778, 0.821828)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.106768, 0.573927)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 2, 0.927615, 0.168763)
+
+weighted_log_sum, utility_coeff=[0.167083,0.176051,0.173089,0.004166,0.155245,0.139728,0.158338,0.026300,]
+
+Finish getOptimalSolutionRAC with time 561.590145 seconds
+
+Finish getApproximateSolutionRAC with time 90.004641 seconds
+
+Finish RACSchedule with time 105.737219 seconds
+
+Finish RelaxedRACSchedule with time 133.551249 seconds
+
+Finish LDF with time 121.908921 seconds
+
+Finish EPDF with time 124.370991 seconds
+
+Finish LLDF with time 128.759656 seconds
+
+Instance 49
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 2, 0.939080, 0.368389)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.466520, 0.040884)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.698057, 0.350579)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.959090, 0.834643)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.677291, 0.553392)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 4, 0.073429, 0.089336)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.621998, 0.385670)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 4, 0.274170, 0.584760)
+
+weighted_log_sum, utility_coeff=[0.125337,0.073559,0.129270,0.195474,0.281607,0.051746,0.017833,0.125175,]
+
+Finish getOptimalSolutionRAC with time 266.302142 seconds
+
+Finish getApproximateSolutionRAC with time 51.806184 seconds
+
+Finish RACSchedule with time 99.914179 seconds
+
+Finish RelaxedRACSchedule with time 133.549219 seconds
+
+Finish LDF with time 121.545806 seconds
+
+Finish EPDF with time 123.595285 seconds
+
+Finish LLDF with time 124.971980 seconds
+
+Instance 50
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.869771, 0.129689)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.182464, 0.903193)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.998992, 0.245676)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.017284, 0.552558)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.802235, 0.104977)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.412136, 0.285277)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.180541, 0.212107)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.126432, 0.573603)
+
+weighted_log_sum, utility_coeff=[0.159115,0.052339,0.091399,0.174256,0.175779,0.184851,0.150328,0.011934,]
+
+Finish getOptimalSolutionRAC with time 45.321305 seconds
+
+Finish getApproximateSolutionRAC with time 24.240113 seconds
+
+Finish RACSchedule with time 99.920910 seconds
+
+Finish RelaxedRACSchedule with time 133.996661 seconds
+
+Finish LDF with time 121.384890 seconds
+
+Finish EPDF with time 124.240133 seconds
+
+Finish LLDF with time 123.538704 seconds
+
+Instance 51
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.581028, 0.892014)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.121545, 0.142373)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.374249, 0.910173)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.880032, 0.040240)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.143916, 0.156182)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.257173, 0.744456)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.913732, 0.183878)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.586061, 0.656718)
+
+weighted_log_sum, utility_coeff=[0.061338,0.214923,0.202399,0.260842,0.114185,0.019267,0.115633,0.011414,]
+
+Finish getOptimalSolutionRAC with time 67.321975 seconds
+
+Finish getApproximateSolutionRAC with time 21.278285 seconds
+
+Finish RACSchedule with time 99.949471 seconds
+
+Finish RelaxedRACSchedule with time 133.470884 seconds
+
+Finish LDF with time 120.846408 seconds
+
+Finish EPDF with time 123.869560 seconds
+
+Finish LLDF with time 127.470703 seconds
+
+Instance 52
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.482240, 0.855946)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.615936, 0.929430)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.416138, 0.020897)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.570067, 0.056712)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.661804, 0.802317)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 4, 0.720133, 0.355671)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.846968, 0.449003)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.988806, 0.129639)
+
+weighted_log_sum, utility_coeff=[0.165476,0.132056,0.119777,0.054473,0.123815,0.146585,0.074868,0.182951,]
+
+Finish getOptimalSolutionRAC with time 208.141000 seconds
+
+Finish getApproximateSolutionRAC with time 17.082545 seconds
+
+Finish RACSchedule with time 100.397646 seconds
+
+Finish RelaxedRACSchedule with time 133.655619 seconds
+
+Finish LDF with time 121.497077 seconds
+
+Finish EPDF with time 123.478840 seconds
+
+Finish LLDF with time 127.976464 seconds
+
+Instance 53
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.765141, 0.170868)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.689723, 0.459522)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 5, 0.501838, 0.109985)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.145197, 0.524524)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.648898, 0.178626)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.257788, 0.123426)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.342006, 0.429055)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 3, 0.680698, 0.931884)
+
+weighted_log_sum, utility_coeff=[0.174519,0.195446,0.151385,0.088433,0.178328,0.030245,0.006709,0.174935,]
+
+Finish getOptimalSolutionRAC with time 359.836368 seconds
+
+Finish getApproximateSolutionRAC with time 98.903825 seconds
+
+Finish RACSchedule with time 100.123478 seconds
+
+Finish RelaxedRACSchedule with time 133.726827 seconds
+
+Finish LDF with time 121.459960 seconds
+
+Finish EPDF with time 123.799408 seconds
+
+Finish LLDF with time 125.054346 seconds
+
+Instance 54
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.922129, 0.736245)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.905296, 0.858479)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.884791, 0.960008)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.179618, 0.576199)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.520862, 0.932570)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.845848, 0.080360)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.575565, 0.983798)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.253207, 0.347340)
+
+weighted_log_sum, utility_coeff=[0.163101,0.111416,0.015758,0.050393,0.150208,0.187662,0.126693,0.194768,]
+
+Finish getOptimalSolutionRAC with time 79.495338 seconds
+
+Finish getApproximateSolutionRAC with time 21.001831 seconds
+
+Finish RACSchedule with time 100.617757 seconds
+
+Finish RelaxedRACSchedule with time 133.633755 seconds
+
+Finish LDF with time 122.062433 seconds
+
+Finish EPDF with time 124.700047 seconds
+
+Finish LLDF with time 131.601541 seconds
+
+Instance 55
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.555547, 0.395025)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.502343, 0.634270)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.042843, 0.084352)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.840532, 0.011139)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.728815, 0.875986)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.513067, 0.751652)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.129348, 0.902583)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.547842, 0.765755)
+
+weighted_log_sum, utility_coeff=[0.002934,0.207534,0.141523,0.065947,0.129303,0.136479,0.121327,0.194952,]
+
+Finish getOptimalSolutionRAC with time 891.062331 seconds
+
+Finish getApproximateSolutionRAC with time 101.807994 seconds
+
+Finish RACSchedule with time 100.891662 seconds
+
+Finish RelaxedRACSchedule with time 134.040455 seconds
+
+Finish LDF with time 121.679287 seconds
+
+Finish EPDF with time 123.759323 seconds
+
+Finish LLDF with time 135.834626 seconds
+
+Instance 56
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.689041, 0.023142)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.884132, 0.137562)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.124256, 0.396417)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 5, 0.046946, 0.062502)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 1, 0.745118, 0.916710)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.674626, 0.582019)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.003930, 0.352258)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.833065, 0.291937)
+
+weighted_log_sum, utility_coeff=[0.084932,0.222970,0.167144,0.081046,0.089661,0.016947,0.073853,0.263447,]
+
+Finish getOptimalSolutionRAC with time 763.386692 seconds
+
+Finish getApproximateSolutionRAC with time 98.888801 seconds
+
+Finish RACSchedule with time 100.463345 seconds
+
+Finish RelaxedRACSchedule with time 134.243154 seconds
+
+Finish LDF with time 122.375116 seconds
+
+Finish EPDF with time 124.123187 seconds
+
+Finish LLDF with time 124.246494 seconds
+
+Instance 57
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.781747, 0.102223)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.177856, 0.503627)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 3, 0.073809, 0.694709)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.068985, 0.087073)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.824069, 0.155444)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.038277, 0.069124)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.209692, 0.075173)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.430975, 0.373184)
+
+weighted_log_sum, utility_coeff=[0.190959,0.150656,0.159997,0.016822,0.051594,0.259494,0.060389,0.110090,]
+
+Finish getOptimalSolutionRAC with time 281.519888 seconds
+
+Finish getApproximateSolutionRAC with time 25.435923 seconds
+
+Finish RACSchedule with time 99.796919 seconds
+
+Finish RelaxedRACSchedule with time 133.210259 seconds
+
+Finish LDF with time 121.306072 seconds
+
+Finish EPDF with time 123.787138 seconds
+
+Finish LLDF with time 123.893160 seconds
+
+Instance 58
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 4, 0.926685, 0.837618)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.384812, 0.027669)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.626774, 0.127658)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.427256, 0.206507)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 1, 0.932826, 0.355424)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.930494, 0.725388)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.101640, 0.470596)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.721359, 0.941038)
+
+weighted_log_sum, utility_coeff=[0.153465,0.075967,0.164555,0.198066,0.113620,0.017716,0.141402,0.135209,]
+
+Finish getOptimalSolutionRAC with time 179.823705 seconds
+
+Finish getApproximateSolutionRAC with time 33.599739 seconds
+
+Finish RACSchedule with time 100.033003 seconds
+
+Finish RelaxedRACSchedule with time 133.944931 seconds
+
+Finish LDF with time 140.535925 seconds
+
+Finish EPDF with time 171.223217 seconds
+
+Finish LLDF with time 171.359933 seconds
+
+Instance 59
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 2, 0.346210, 0.840275)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.182464, 0.916861)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.785959, 0.440387)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.417640, 0.176737)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 1, 0.078333, 0.584235)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.026597, 0.440375)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.324014, 0.568673)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.289670, 0.544658)
+
+weighted_log_sum, utility_coeff=[0.045039,0.193639,0.123908,0.138221,0.119378,0.026139,0.097355,0.256320,]
+
+Finish getOptimalSolutionRAC with time 253.915791 seconds
+
+Finish getApproximateSolutionRAC with time 98.722769 seconds
+
+Finish RACSchedule with time 111.453808 seconds
+
+Finish RelaxedRACSchedule with time 148.676843 seconds
+
+Finish LDF with time 122.228609 seconds
+
+Finish EPDF with time 123.954073 seconds
+
+Finish LLDF with time 131.495303 seconds
+
+Instance 60
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.446205, 0.543198)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.408916, 0.780835)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.066173, 0.334727)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.859672, 0.041942)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.474703, 0.312713)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.505434, 0.671439)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.470610, 0.105169)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.943521, 0.714709)
+
+weighted_log_sum, utility_coeff=[0.179492,0.247071,0.078147,0.138032,0.061207,0.015156,0.049926,0.230968,]
+
+Finish getOptimalSolutionRAC with time 627.672620 seconds
+
+Finish getApproximateSolutionRAC with time 99.291459 seconds
+
+Finish RACSchedule with time 100.662113 seconds
+
+Finish RelaxedRACSchedule with time 134.169795 seconds
+
+Finish LDF with time 121.040943 seconds
+
+Finish EPDF with time 123.921913 seconds
+
+Finish LLDF with time 126.185603 seconds
+
+Instance 61
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 3, 0.825694, 0.648239)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.544406, 0.212302)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.278986, 0.229192)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.962642, 0.548651)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.125037, 0.975920)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.132741, 0.995129)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.902200, 0.473343)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 3, 0.972439, 0.929359)
+
+weighted_log_sum, utility_coeff=[0.249788,0.085756,0.046722,0.218296,0.150762,0.076612,0.062369,0.109696,]
+
+Finish getOptimalSolutionRAC with time 310.574015 seconds
+
+Finish getApproximateSolutionRAC with time 29.848069 seconds
+
+Finish RACSchedule with time 99.946189 seconds
+
+Finish RelaxedRACSchedule with time 133.428816 seconds
+
+Finish LDF with time 121.582661 seconds
+
+Finish EPDF with time 124.781117 seconds
+
+Finish LLDF with time 128.005931 seconds
+
+Instance 62
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.137657, 0.520578)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.059587, 0.198372)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.615360, 0.316886)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.847732, 0.288452)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.620861, 0.715118)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.819939, 0.948724)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.787907, 0.257831)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.059462, 0.377388)
+
+weighted_log_sum, utility_coeff=[0.163691,0.094332,0.151195,0.029643,0.112948,0.179719,0.212002,0.056470,]
+
+Finish getOptimalSolutionRAC with time 583.463392 seconds
+
+Finish getApproximateSolutionRAC with time 97.903038 seconds
+
+Finish RACSchedule with time 100.438693 seconds
+
+Finish RelaxedRACSchedule with time 133.382821 seconds
+
+Finish LDF with time 121.969120 seconds
+
+Finish EPDF with time 123.725655 seconds
+
+Finish LLDF with time 125.719625 seconds
+
+Instance 63
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.096399, 0.593977)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.373758, 0.288217)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.922602, 0.890433)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.863540, 0.043178)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.451227, 0.657496)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.962467, 0.118992)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.746570, 0.091492)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.601666, 0.712679)
+
+weighted_log_sum, utility_coeff=[0.093220,0.152898,0.206110,0.172288,0.055416,0.126765,0.051788,0.141514,]
+
+Finish getOptimalSolutionRAC with time 620.953238 seconds
+
+Finish getApproximateSolutionRAC with time 97.540184 seconds
+
+Finish RACSchedule with time 100.453507 seconds
+
+Finish RelaxedRACSchedule with time 137.353640 seconds
+
+Finish LDF with time 120.851033 seconds
+
+Finish EPDF with time 124.527499 seconds
+
+Finish LLDF with time 125.714447 seconds
+
+Instance 64
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 4, 0.448702, 0.356787)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 1, 0.389327, 0.703554)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.802508, 0.832802)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.958738, 0.935531)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.301637, 0.923415)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.249293, 0.256661)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.391116, 0.626165)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 4, 0.240756, 0.665044)
+
+weighted_log_sum, utility_coeff=[0.164438,0.013963,0.199184,0.267473,0.089681,0.069582,0.130312,0.065367,]
+
+Finish getOptimalSolutionRAC with time 958.458261 seconds
+
+Finish getApproximateSolutionRAC with time 90.681153 seconds
+
+Finish RACSchedule with time 102.876484 seconds
+
+Finish RelaxedRACSchedule with time 134.997974 seconds
+
+Finish LDF with time 127.300306 seconds
+
+Finish EPDF with time 125.948531 seconds
+
+Finish LLDF with time 129.053857 seconds
+
+Instance 65
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.778017, 0.212469)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.357243, 0.977198)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.169475, 0.799535)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.726297, 0.292710)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 1, 0.685107, 0.508103)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 3, 0.723148, 0.342817)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 3, 0.577304, 0.941874)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.448355, 0.753949)
+
+weighted_log_sum, utility_coeff=[0.011196,0.104286,0.105157,0.089125,0.284676,0.138841,0.217099,0.049620,]
+
+Finish getOptimalSolutionRAC with time 1077.509859 seconds
+
+Finish getApproximateSolutionRAC with time 93.038981 seconds
+
+Finish RACSchedule with time 102.186195 seconds
+
+Finish RelaxedRACSchedule with time 133.700614 seconds
+
+Finish LDF with time 122.118124 seconds
+
+Finish EPDF with time 124.292044 seconds
+
+Finish LLDF with time 128.183824 seconds
+
+Instance 66
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.252530, 0.880713)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.756820, 0.875095)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.573623, 0.321745)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.265196, 0.850756)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.259145, 0.611027)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.417907, 0.240698)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.242567, 0.903630)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.270115, 0.159879)
+
+weighted_log_sum, utility_coeff=[0.149436,0.027414,0.082514,0.121250,0.066982,0.197259,0.153668,0.201477,]
+
+Finish getOptimalSolutionRAC with time 400.346834 seconds
+
+Finish getApproximateSolutionRAC with time 46.066324 seconds
+
+Finish RACSchedule with time 101.251693 seconds
+
+Finish RelaxedRACSchedule with time 134.362142 seconds
+
+Finish LDF with time 122.840526 seconds
+
+Finish EPDF with time 125.339299 seconds
+
+Finish LLDF with time 129.594760 seconds
+
+Instance 67
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.824846, 0.047521)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.543994, 0.204221)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.771747, 0.617845)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 1, 0.798652, 0.703895)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.572190, 0.873358)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.884309, 0.699865)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.998455, 0.362938)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.948303, 0.344511)
+
+weighted_log_sum, utility_coeff=[0.190290,0.000209,0.181407,0.106280,0.200700,0.064901,0.045627,0.210585,]
+
+Finish getOptimalSolutionRAC with time 314.271077 seconds
+
+Finish getApproximateSolutionRAC with time 37.079973 seconds
+
+Finish RACSchedule with time 100.292000 seconds
+
+Finish RelaxedRACSchedule with time 134.854554 seconds
+
+Finish LDF with time 121.899024 seconds
+
+Finish EPDF with time 124.462081 seconds
+
+Finish LLDF with time 131.811359 seconds
+
+Instance 68
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 3, 0.906131, 0.514485)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 3, 0.681165, 0.183407)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.830270, 0.596072)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.840684, 0.060310)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.322068, 0.551327)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 1, 0.693172, 0.868798)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.991564, 0.179224)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.424396, 0.649491)
+
+weighted_log_sum, utility_coeff=[0.097739,0.106337,0.135596,0.129950,0.163171,0.171088,0.025747,0.170371,]
+
+Finish getOptimalSolutionRAC with time 476.014708 seconds
+
+Finish getApproximateSolutionRAC with time 99.482405 seconds
+
+Finish RACSchedule with time 129.519572 seconds
+
+Finish RelaxedRACSchedule with time 133.355622 seconds
+
+Finish LDF with time 123.219468 seconds
+
+Finish EPDF with time 123.854401 seconds
+
+Finish LLDF with time 135.859480 seconds
+
+Instance 69
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.595813, 0.230435)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.649675, 0.081412)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.081184, 0.736503)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.646740, 0.848497)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.790080, 0.160211)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 4, 0.467265, 0.100498)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.545002, 0.710732)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.249865, 0.118598)
+
+weighted_log_sum, utility_coeff=[0.021137,0.167073,0.003696,0.257184,0.095782,0.218174,0.101814,0.135139,]
+
+Finish getOptimalSolutionRAC with time 683.051369 seconds
+
+Finish getApproximateSolutionRAC with time 47.754051 seconds
+
+Finish RACSchedule with time 100.185716 seconds
+
+Finish RelaxedRACSchedule with time 133.703575 seconds
+
+Finish LDF with time 121.762885 seconds
+
+Finish EPDF with time 123.454646 seconds
+
+Finish LLDF with time 125.933712 seconds
+
+Instance 70
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.533129, 0.059477)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.820608, 0.358859)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.072343, 0.291846)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.808046, 0.892304)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.622078, 0.280217)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 4, 0.555373, 0.735198)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.728202, 0.763309)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.372248, 0.212743)
+
+weighted_log_sum, utility_coeff=[0.049303,0.063722,0.109324,0.139463,0.252224,0.147690,0.094994,0.143280,]
+
+Finish getOptimalSolutionRAC with time 1508.025235 seconds
+
+Finish getApproximateSolutionRAC with time 94.857896 seconds
+
+Finish RACSchedule with time 100.812297 seconds
+
+Finish RelaxedRACSchedule with time 134.115881 seconds
+
+Finish LDF with time 122.710488 seconds
+
+Finish EPDF with time 139.920739 seconds
+
+Finish LLDF with time 128.215174 seconds
+
+Instance 71
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.303349, 0.271949)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.225239, 0.668540)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.496955, 0.860962)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 2, 0.054411, 0.429094)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.910162, 0.450698)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 2, 0.274279, 0.864995)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 3, 0.041608, 0.701343)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.821517, 0.127505)
+
+weighted_log_sum, utility_coeff=[0.275352,0.187662,0.024742,0.104738,0.138208,0.053364,0.018716,0.197218,]
+
+Finish getOptimalSolutionRAC with time 338.112085 seconds
+
+Finish getApproximateSolutionRAC with time 135.517907 seconds
+
+Finish RACSchedule with time 100.446217 seconds
+
+Finish RelaxedRACSchedule with time 133.588270 seconds
+
+Finish LDF with time 121.200202 seconds
+
+Finish EPDF with time 123.941910 seconds
+
+Finish LLDF with time 127.112627 seconds
+
+Instance 72
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.167878, 0.393403)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.062853, 0.480572)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.630988, 0.180981)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.802392, 0.070139)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.365324, 0.526956)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.195059, 0.790392)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.291813, 0.598118)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.993782, 0.331317)
+
+weighted_log_sum, utility_coeff=[0.140146,0.074835,0.250361,0.020510,0.039313,0.065558,0.148014,0.261264,]
+
+Finish getOptimalSolutionRAC with time 1088.255454 seconds
+
+Finish getApproximateSolutionRAC with time 88.675786 seconds
+
+Finish RACSchedule with time 100.652233 seconds
+
+Finish RelaxedRACSchedule with time 133.931415 seconds
+
+Finish LDF with time 121.657854 seconds
+
+Finish EPDF with time 124.816754 seconds
+
+Finish LLDF with time 125.966336 seconds
+
+Instance 73
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.867708, 0.931889)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.483656, 0.513462)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.669186, 0.170083)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.368225, 0.265787)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 4, 0.063958, 0.441072)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.985484, 0.714122)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.723261, 0.314466)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.388512, 0.016975)
+
+weighted_log_sum, utility_coeff=[0.103022,0.084375,0.123994,0.304399,0.143034,0.181778,0.010135,0.049264,]
+
+Finish getOptimalSolutionRAC with time 1090.882199 seconds
+
+Finish getApproximateSolutionRAC with time 91.910863 seconds
+
+Finish RACSchedule with time 102.866265 seconds
+
+Finish RelaxedRACSchedule with time 133.668267 seconds
+
+Finish LDF with time 124.161864 seconds
+
+Finish EPDF with time 124.593111 seconds
+
+Finish LLDF with time 127.639591 seconds
+
+Instance 74
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 2, 0.662426, 0.386145)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.972400, 0.819551)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.694909, 0.835732)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 3, 0.880346, 0.969051)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.987785, 0.661117)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.750621, 0.065849)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.807133, 0.786971)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.254306, 0.659081)
+
+weighted_log_sum, utility_coeff=[0.005721,0.059935,0.082314,0.198743,0.198024,0.182524,0.120413,0.152326,]
+
+Finish getOptimalSolutionRAC with time 1068.206742 seconds
+
+Finish getApproximateSolutionRAC with time 107.523490 seconds
+
+Finish RACSchedule with time 103.598993 seconds
+
+Finish RelaxedRACSchedule with time 135.698551 seconds
+
+Finish LDF with time 122.246236 seconds
+
+Finish EPDF with time 124.876258 seconds
+
+Finish LLDF with time 131.483253 seconds
+
+Instance 75
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.367588, 0.051331)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.552987, 0.011033)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.836732, 0.220153)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.049211, 0.933670)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.553448, 0.258175)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 4, 0.097431, 0.026971)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.414731, 0.360845)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.974344, 0.666067)
+
+weighted_log_sum, utility_coeff=[0.135699,0.182294,0.072836,0.177994,0.017099,0.273908,0.120740,0.019430,]
+
+Finish getOptimalSolutionRAC with time 177.556424 seconds
+
+Finish getApproximateSolutionRAC with time 36.917839 seconds
+
+Finish RACSchedule with time 100.193704 seconds
+
+Finish RelaxedRACSchedule with time 135.259081 seconds
+
+Finish LDF with time 123.094555 seconds
+
+Finish EPDF with time 128.065878 seconds
+
+Finish LLDF with time 123.986960 seconds
+
+Instance 76
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.392306, 0.604410)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.984949, 0.365016)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.865647, 0.811600)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 5, 0.540716, 0.342384)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.739257, 0.543506)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.219192, 0.726677)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.484959, 0.484551)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.679346, 0.411958)
+
+weighted_log_sum, utility_coeff=[0.188240,0.174107,0.090444,0.032448,0.034083,0.163267,0.119203,0.198208,]
+
+Finish getOptimalSolutionRAC with time 127.704011 seconds
+
+Finish getApproximateSolutionRAC with time 28.814839 seconds
+
+Finish RACSchedule with time 100.573170 seconds
+
+Finish RelaxedRACSchedule with time 133.423056 seconds
+
+Finish LDF with time 121.433681 seconds
+
+Finish EPDF with time 124.949621 seconds
+
+Finish LLDF with time 128.133458 seconds
+
+Instance 77
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.350647, 0.277539)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.701886, 0.355253)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.458500, 0.786008)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 2, 0.975633, 0.652451)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.445568, 0.044439)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.968830, 0.881578)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.346303, 0.702638)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.282930, 0.207856)
+
+weighted_log_sum, utility_coeff=[0.214351,0.083014,0.036356,0.216757,0.091626,0.163157,0.092302,0.102437,]
+
+Finish getOptimalSolutionRAC with time 443.059593 seconds
+
+Finish getApproximateSolutionRAC with time 48.220608 seconds
+
+Finish RACSchedule with time 100.233639 seconds
+
+Finish RelaxedRACSchedule with time 134.034328 seconds
+
+Finish LDF with time 122.342420 seconds
+
+Finish EPDF with time 124.544743 seconds
+
+Finish LLDF with time 127.002013 seconds
+
+Instance 78
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.641602, 0.349725)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.409146, 0.845984)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.615561, 0.181812)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.386698, 0.157136)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.704982, 0.828763)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.824768, 0.851320)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.226958, 0.783784)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.354392, 0.202523)
+
+weighted_log_sum, utility_coeff=[0.149859,0.220830,0.148829,0.019907,0.135484,0.150297,0.157103,0.017691,]
+
+Finish getOptimalSolutionRAC with time 102.782873 seconds
+
+Finish getApproximateSolutionRAC with time 18.984696 seconds
+
+Finish RACSchedule with time 100.603699 seconds
+
+Finish RelaxedRACSchedule with time 133.622416 seconds
+
+Finish LDF with time 122.099568 seconds
+
+Finish EPDF with time 126.060096 seconds
+
+Finish LLDF with time 130.457083 seconds
+
+Instance 79
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.217334, 0.417185)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.482708, 0.943784)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.578131, 0.874706)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 2, 0.213815, 0.591467)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.201573, 0.366971)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 2, 0.265973, 0.581990)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.101146, 0.713611)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 5, 0.719808, 0.080782)
+
+weighted_log_sum, utility_coeff=[0.083132,0.117553,0.195697,0.057669,0.125628,0.175899,0.195628,0.048794,]
+
+Finish getOptimalSolutionRAC with time 440.991203 seconds
+
+Finish getApproximateSolutionRAC with time 31.906230 seconds
+
+Finish RACSchedule with time 100.670188 seconds
+
+Finish RelaxedRACSchedule with time 136.505355 seconds
+
+Finish LDF with time 133.210795 seconds
+
+Finish EPDF with time 126.796162 seconds
+
+Finish LLDF with time 130.509723 seconds
+
+Instance 80
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.042434, 0.934250)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.826438, 0.896871)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 2, 0.127758, 0.186103)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.484496, 0.880244)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.042805, 0.845398)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 4, 0.293788, 0.164813)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.296729, 0.668665)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.932866, 0.745617)
+
+weighted_log_sum, utility_coeff=[0.080369,0.058720,0.270722,0.007211,0.103660,0.165259,0.189697,0.124362,]
+
+Finish getOptimalSolutionRAC with time 517.876998 seconds
+
+Finish getApproximateSolutionRAC with time 90.740737 seconds
+
+Finish RACSchedule with time 100.678718 seconds
+
+Finish RelaxedRACSchedule with time 142.079093 seconds
+
+Finish LDF with time 121.829333 seconds
+
+Finish EPDF with time 124.075499 seconds
+
+Finish LLDF with time 127.288015 seconds
+
+Instance 81
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.405812, 0.121114)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.055002, 0.913161)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.514534, 0.662990)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.432674, 0.054229)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 1, 0.556777, 0.800526)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.390926, 0.320165)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 4, 0.078665, 0.740703)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 4, 0.337220, 0.783013)
+
+weighted_log_sum, utility_coeff=[0.010213,0.000065,0.178636,0.152373,0.225918,0.085524,0.202691,0.144579,]
+
+Finish getOptimalSolutionRAC with time 778.557719 seconds
+
+Finish getApproximateSolutionRAC with time 87.378443 seconds
+
+Finish RACSchedule with time 100.440779 seconds
+
+Finish RelaxedRACSchedule with time 142.938525 seconds
+
+Finish LDF with time 121.782688 seconds
+
+Finish EPDF with time 124.153634 seconds
+
+Finish LLDF with time 127.829104 seconds
+
+Instance 82
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.499305, 0.338805)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.558554, 0.322267)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.631817, 0.338045)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.853562, 0.785158)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 2, 0.842166, 0.034935)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.140043, 0.144608)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.476653, 0.905260)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.052324, 0.465233)
+
+weighted_log_sum, utility_coeff=[0.141043,0.018070,0.179543,0.189237,0.139823,0.029469,0.230008,0.072808,]
+
+Finish getOptimalSolutionRAC with time 1749.009952 seconds
+
+Finish getApproximateSolutionRAC with time 95.834073 seconds
+
+Finish RACSchedule with time 100.333655 seconds
+
+Finish RelaxedRACSchedule with time 133.594610 seconds
+
+Finish LDF with time 121.972914 seconds
+
+Finish EPDF with time 125.037678 seconds
+
+Finish LLDF with time 127.019644 seconds
+
+Instance 83
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.510729, 0.640921)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 4, 0.272814, 0.653607)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 5, 0.241927, 0.086512)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 3, 0.975325, 0.066664)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.085003, 0.573873)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 3, 0.361569, 0.145250)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.956985, 0.811182)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.656292, 0.941765)
+
+weighted_log_sum, utility_coeff=[0.211716,0.178427,0.109499,0.021709,0.133126,0.033193,0.109003,0.203327,]
+
+Finish getOptimalSolutionRAC with time 726.943964 seconds
+
+Finish getApproximateSolutionRAC with time 108.734822 seconds
+
+Finish RACSchedule with time 100.099647 seconds
+
+Finish RelaxedRACSchedule with time 133.382383 seconds
+
+Finish LDF with time 121.048230 seconds
+
+Finish EPDF with time 124.484996 seconds
+
+Finish LLDF with time 126.318304 seconds
+
+Instance 84
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.065482, 0.433144)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 1, 0.260516, 0.128418)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.371882, 0.309312)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 1, 0.696322, 0.026533)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.508040, 0.319273)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.631138, 0.394859)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.559671, 0.807610)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.482691, 0.906729)
+
+weighted_log_sum, utility_coeff=[0.083501,0.176440,0.214746,0.106004,0.115529,0.144851,0.025861,0.133068,]
+
+Finish getOptimalSolutionRAC with time 235.200511 seconds
+
+Finish getApproximateSolutionRAC with time 93.248712 seconds
+
+Finish RACSchedule with time 99.877195 seconds
+
+Finish RelaxedRACSchedule with time 133.362494 seconds
+
+Finish LDF with time 122.417725 seconds
+
+Finish EPDF with time 125.265376 seconds
+
+Finish LLDF with time 128.135267 seconds
+
+Instance 85
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 2, 0.624419, 0.363413)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.466518, 0.337665)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.497725, 0.810172)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.709513, 0.603670)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.409650, 0.310224)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.249727, 0.376098)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 4, 0.199234, 0.313751)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 3, 0.396209, 0.504894)
+
+weighted_log_sum, utility_coeff=[0.188685,0.204855,0.221825,0.056499,0.115935,0.201687,0.003792,0.006722,]
+
+Finish getOptimalSolutionRAC with time 418.946892 seconds
+
+Finish getApproximateSolutionRAC with time 90.212658 seconds
+
+Finish RACSchedule with time 100.376258 seconds
+
+Finish RelaxedRACSchedule with time 133.585319 seconds
+
+Finish LDF with time 122.244667 seconds
+
+Finish EPDF with time 124.382014 seconds
+
+Finish LLDF with time 124.537864 seconds
+
+Instance 86
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.357405, 0.310270)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.198099, 0.759936)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.180674, 0.286697)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.747714, 0.058150)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.907848, 0.051276)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 2, 0.427636, 0.683106)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.420345, 0.898034)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.951379, 0.167592)
+
+weighted_log_sum, utility_coeff=[0.050836,0.155143,0.110207,0.131867,0.043817,0.124157,0.150386,0.233588,]
+
+Finish getOptimalSolutionRAC with time 343.410222 seconds
+
+Finish getApproximateSolutionRAC with time 84.477432 seconds
+
+Finish RACSchedule with time 100.326051 seconds
+
+Finish RelaxedRACSchedule with time 133.777180 seconds
+
+Finish LDF with time 121.385121 seconds
+
+Finish EPDF with time 124.224484 seconds
+
+Finish LLDF with time 123.846443 seconds
+
+Instance 87
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.131746, 0.988996)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.907541, 0.239020)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.418261, 0.616795)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.500078, 0.916518)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.859268, 0.853079)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 3, 0.616714, 0.133880)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.191978, 0.126895)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.686056, 0.102853)
+
+weighted_log_sum, utility_coeff=[0.193132,0.025652,0.004696,0.242485,0.096228,0.049647,0.182725,0.205436,]
+
+Finish getOptimalSolutionRAC with time 1267.158249 seconds
+
+Finish getApproximateSolutionRAC with time 93.005478 seconds
+
+Finish RACSchedule with time 101.094654 seconds
+
+Finish RelaxedRACSchedule with time 133.666036 seconds
+
+Finish LDF with time 121.517655 seconds
+
+Finish EPDF with time 124.513140 seconds
+
+Finish LLDF with time 130.588358 seconds
+
+Instance 88
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.710056, 0.680085)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.281259, 0.534220)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.353664, 0.950429)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.821175, 0.248010)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.396785, 0.502031)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.831054, 0.547060)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.535982, 0.659042)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.806301, 0.742534)
+
+weighted_log_sum, utility_coeff=[0.188509,0.126929,0.053529,0.167621,0.130944,0.076903,0.161481,0.094083,]
+
+Finish getOptimalSolutionRAC with time 560.392415 seconds
+
+Finish getApproximateSolutionRAC with time 84.880828 seconds
+
+Finish RACSchedule with time 101.216973 seconds
+
+Finish RelaxedRACSchedule with time 153.729226 seconds
+
+Finish LDF with time 121.807376 seconds
+
+Finish EPDF with time 124.729009 seconds
+
+Finish LLDF with time 130.162440 seconds
+
+Instance 89
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.476962, 0.134781)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 4, 0.287196, 0.452629)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.300946, 0.123323)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 2, 0.811114, 0.835544)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.283657, 0.145678)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 1, 0.518025, 0.886827)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.034247, 0.890211)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.971211, 0.828625)
+
+weighted_log_sum, utility_coeff=[0.075623,0.052563,0.091469,0.166164,0.155578,0.157953,0.102128,0.198523,]
+
+Finish getOptimalSolutionRAC with time 948.951482 seconds
+
+Finish getApproximateSolutionRAC with time 88.783502 seconds
+
+Finish RACSchedule with time 100.576950 seconds
+
+Finish RelaxedRACSchedule with time 133.561411 seconds
+
+Finish LDF with time 122.140359 seconds
+
+Finish EPDF with time 124.955357 seconds
+
+Finish LLDF with time 127.924235 seconds
+
+Instance 90
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.188470, 0.294437)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 2, 0.334991, 0.661938)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 3, 0.773930, 0.909529)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.667946, 0.822852)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.911546, 0.863775)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 1, 0.152683, 0.269492)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.677984, 0.189492)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.177265, 0.046977)
+
+weighted_log_sum, utility_coeff=[0.189584,0.041477,0.111505,0.201334,0.035107,0.185709,0.121126,0.114159,]
+
+Finish getOptimalSolutionRAC with time 58.695043 seconds
+
+Finish getApproximateSolutionRAC with time 20.250645 seconds
+
+Finish RACSchedule with time 100.206341 seconds
+
+Finish RelaxedRACSchedule with time 133.699481 seconds
+
+Finish LDF with time 122.005631 seconds
+
+Finish EPDF with time 124.199108 seconds
+
+Finish LLDF with time 126.614465 seconds
+
+Instance 91
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.593779, 0.531101)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.046136, 0.601251)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 2, 0.274560, 0.965332)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 5, 0.103251, 0.278000)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 2, 2, 0.949552, 0.036288)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.964873, 0.763520)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 4, 2, 0.079976, 0.612928)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 3, 0.948677, 0.485355)
+
+weighted_log_sum, utility_coeff=[0.241744,0.025591,0.057340,0.039341,0.115480,0.250758,0.094696,0.175050,]
+
+Finish getOptimalSolutionRAC with time 66.605847 seconds
+
+Finish getApproximateSolutionRAC with time 37.098952 seconds
+
+Finish RACSchedule with time 99.906716 seconds
+
+Finish RelaxedRACSchedule with time 133.532731 seconds
+
+Finish LDF with time 121.603001 seconds
+
+Finish EPDF with time 124.524670 seconds
+
+Finish LLDF with time 125.632733 seconds
+
+Instance 92
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.554366, 0.199275)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 3, 0.936834, 0.406030)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.481513, 0.074722)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.316660, 0.577317)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.682726, 0.427386)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.776946, 0.952809)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.780856, 0.319595)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.879583, 0.715330)
+
+weighted_log_sum, utility_coeff=[0.052243,0.032161,0.155531,0.223271,0.048481,0.243144,0.015348,0.229821,]
+
+Finish getOptimalSolutionRAC with time 514.628105 seconds
+
+Finish getApproximateSolutionRAC with time 43.758914 seconds
+
+Finish RACSchedule with time 100.628018 seconds
+
+Finish RelaxedRACSchedule with time 133.839346 seconds
+
+Finish LDF with time 123.101981 seconds
+
+Finish EPDF with time 124.547608 seconds
+
+Finish LLDF with time 128.829552 seconds
+
+Instance 93
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.164573, 0.659823)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.100034, 0.901995)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.145369, 0.171543)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 2, 0.338463, 0.958977)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.739408, 0.663551)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.175176, 0.643226)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.882846, 0.719171)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.405743, 0.024360)
+
+weighted_log_sum, utility_coeff=[0.019829,0.156475,0.088733,0.104314,0.213986,0.128055,0.115004,0.173604,]
+
+Finish getOptimalSolutionRAC with time 1307.244229 seconds
+
+Finish getApproximateSolutionRAC with time 104.981737 seconds
+
+Finish RACSchedule with time 106.135863 seconds
+
+Finish RelaxedRACSchedule with time 141.810672 seconds
+
+Finish LDF with time 122.501673 seconds
+
+Finish EPDF with time 124.345358 seconds
+
+Finish LLDF with time 130.404389 seconds
+
+Instance 94
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.837116, 0.227028)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.475581, 0.281899)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.544557, 0.450238)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.187366, 0.633482)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.383633, 0.749787)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 4, 0.743103, 0.533797)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.400523, 0.439675)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.215082, 0.920315)
+
+weighted_log_sum, utility_coeff=[0.215081,0.105206,0.033965,0.216289,0.095171,0.112840,0.073076,0.148372,]
+
+Finish getOptimalSolutionRAC with time 104.494051 seconds
+
+Finish getApproximateSolutionRAC with time 19.119530 seconds
+
+Finish RACSchedule with time 100.652548 seconds
+
+Finish RelaxedRACSchedule with time 134.327140 seconds
+
+Finish LDF with time 122.493863 seconds
+
+Finish EPDF with time 125.569451 seconds
+
+Finish LLDF with time 129.338783 seconds
+
+Instance 95
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.192230, 0.778160)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.396376, 0.891588)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.091705, 0.333998)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 3, 0.246378, 0.271741)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 1, 0.635159, 0.473178)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 1, 0.658908, 0.391215)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 1, 0.837624, 0.060982)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.335965, 0.390858)
+
+weighted_log_sum, utility_coeff=[0.191342,0.055250,0.218833,0.015993,0.109195,0.175082,0.173180,0.061125,]
+
+Finish getOptimalSolutionRAC with time 63.715603 seconds
+
+Finish getApproximateSolutionRAC with time 30.392310 seconds
+
+Finish RACSchedule with time 99.851445 seconds
+
+Finish RelaxedRACSchedule with time 133.392374 seconds
+
+Finish LDF with time 121.158810 seconds
+
+Finish EPDF with time 123.738194 seconds
+
+Finish LLDF with time 126.525386 seconds
+
+Instance 96
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 3, 0.429482, 0.321240)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 4, 0.154393, 0.454260)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 3, 0.381800, 0.397359)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 3, 0.604277, 0.296130)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.280010, 0.225828)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.374583, 0.051728)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.841480, 0.457794)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 1, 0.591947, 0.123790)
+
+weighted_log_sum, utility_coeff=[0.013832,0.190684,0.160110,0.129551,0.003150,0.159975,0.209536,0.133162,]
+
+Finish getOptimalSolutionRAC with time 587.592533 seconds
+
+Finish getApproximateSolutionRAC with time 114.495561 seconds
+
+Finish RACSchedule with time 100.289610 seconds
+
+Finish RelaxedRACSchedule with time 133.025836 seconds
+
+Finish LDF with time 120.951315 seconds
+
+Finish EPDF with time 124.055133 seconds
+
+Finish LLDF with time 124.708600 seconds
+
+Instance 97
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 2, 0.985951, 0.776423)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.721040, 0.126962)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 1, 0.637084, 0.753301)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.452150, 0.211188)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.680326, 0.426978)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.731872, 0.854980)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 2, 0.783167, 0.594955)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.610336, 0.311711)
+
+weighted_log_sum, utility_coeff=[0.141549,0.156964,0.015971,0.198964,0.184044,0.060497,0.197127,0.044884,]
+
+Finish getOptimalSolutionRAC with time 660.368533 seconds
+
+Finish getApproximateSolutionRAC with time 104.291503 seconds
+
+Finish RACSchedule with time 100.395880 seconds
+
+Finish RelaxedRACSchedule with time 133.759329 seconds
+
+Finish LDF with time 125.713794 seconds
+
+Finish EPDF with time 123.841902 seconds
+
+Finish LLDF with time 125.946179 seconds
+
+Instance 98
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.127249, 0.002633)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 1, 0.626760, 0.681367)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 3, 0.403914, 0.779321)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.725140, 0.686856)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.151461, 0.668163)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.710910, 0.264883)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.475433, 0.087851)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.354386, 0.165791)
+
+weighted_log_sum, utility_coeff=[0.081426,0.257799,0.019869,0.071185,0.022592,0.118147,0.233494,0.195489,]
+
+Finish getOptimalSolutionRAC with time 134.633302 seconds
+
+Finish getApproximateSolutionRAC with time 22.051483 seconds
+
+Finish RACSchedule with time 100.132516 seconds
+
+Finish RelaxedRACSchedule with time 133.843173 seconds
+
+Finish LDF with time 121.587304 seconds
+
+Finish EPDF with time 123.903912 seconds
+
+Finish LLDF with time 125.587365 seconds
+
+Instance 99
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 2, 1, 0.166430, 0.768628)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 3, 1, 0.028912, 0.297931)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.939283, 0.483119)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 2, 0.386678, 0.671622)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.247753, 0.546659)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.432785, 0.349519)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.546456, 0.691079)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (3, 5, 2, 0.821288, 0.908459)
+
+weighted_log_sum, utility_coeff=[0.054684,0.055454,0.154766,0.167504,0.054753,0.163928,0.185082,0.163829,]
+
+Finish getOptimalSolutionRAC with time 130.683140 seconds
+
+Finish getApproximateSolutionRAC with time 100.658272 seconds
+
+Finish RACSchedule with time 100.398695 seconds
+
+Finish RelaxedRACSchedule with time 133.320471 seconds
+
+Finish LDF with time 121.177790 seconds
+
+Finish EPDF with time 123.472581 seconds
+
+Finish LLDF with time 127.996472 seconds
+
+Instance 100
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.737251, 0.290836)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 1, 1, 0.627374, 0.572749)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 1, 0.848943, 0.883003)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (5, 5, 5, 0.211022, 0.143835)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.724451, 0.921543)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.386245, 0.083495)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 1, 1, 0.479179, 0.084180)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 5, 5, 0.247106, 0.579967)
+
+weighted_log_sum, utility_coeff=[0.165865,0.097559,0.008720,0.153349,0.049249,0.092930,0.192351,0.239977,]
+
+Finish getOptimalSolutionRAC with time 144.310222 seconds
+
+Finish getApproximateSolutionRAC with time 35.317245 seconds
+
+Finish RACSchedule with time 99.732803 seconds
+
+Finish RelaxedRACSchedule with time 133.690703 seconds
+
+Finish LDF with time 121.245517 seconds
+
+Finish EPDF with time 123.362470 seconds
+
+Finish LLDF with time 124.584155 seconds
+
+mean_delta_LDF=0.037518, mean_delta_EPDF=0.209736, mean_delta_LLDF=0.025089, mean_delta_RAC=0.011808, mean_delta_RAC_approx=0.262932

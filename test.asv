@@ -1,0 +1,184 @@
+clear all; close all;
+
+%remember to creates a different seed each time
+rng shuffle 
+%select gurobi to solve the LP, much faster than the default SDP3
+%cvx_solver gurobi_3  %for LP
+cvx_solver SDPT3  %for convex
+cvx_save_prefs
+
+n_flow=2
+
+
+n_instance=1
+T=50000
+fprintf('n_flow=%d, n_instance=%d, T=%d\n', n_flow, n_instance, T);
+
+    
+
+Rec_delta_RAC = zeros(n_instance,1);
+Rec_delta_utility_RAC = zeros(n_instance,1);
+Rec_delta_utility_RAC_approx = zeros(n_instance,1);
+
+Rec_delta_RAC_approx_feasibility = zeros(n_instance,1);
+
+Rec_delta_RAC_old = zeros(n_instance,1);
+Rec_delta_utility_RAC_old = zeros(n_instance,1);
+Rec_delta_utility_RAC_approx_old = zeros(n_instance,1);
+
+flow1 = NonOverlappedFlowInstance();
+flow1.offset = 5;
+flow1.period = 1;
+flow1.delay = 1;
+flow1.arrival_prob = 0.738957;
+flow1.success_prob = 0.400230;
+flow1.constructEverything();
+
+flow2 = NonOverlappedFlowInstance();
+flow2.offset = 4;
+flow2.period = 2;
+flow2.delay = 1;
+flow2.arrival_prob = 0.324322;
+flow2.success_prob = 0.491829;
+flow2.constructEverything();
+
+
+for nn=1:n_instance
+    begin_time_stamp=tic;
+    nn
+    fprintf('====================================================================\n');
+    fprintf('\nInstance %d\n', nn);
+
+    flow_array = cell(n_flow,1);
+%     for ii=1:n_flow
+%         flow = NonOverlappedFlowInstance();
+%         flow.offset = randi([1,5]);
+%         flow.period = randi([1,5]);
+%         flow.delay = randi([1,flow.period]);
+%         flow.arrival_prob = rand;
+%         flow.success_prob = rand;
+%         flow.constructEverything();
+%         flow_array{ii} = flow;
+%     end
+
+    
+    
+    for ii=1:n_flow
+        fprintf('Flow %d: (offset, period, delay, success_prob, arrival_prob) = (%d, %d, %d, %f, %f)\n', ii, flow_array{ii}.offset, ...
+            flow_array{ii}.period, flow_array{ii}.delay, flow_array{ii}.success_prob,  flow_array{ii}.arrival_prob(1));
+    end
+    
+    obj = DownlinkAPInstance();
+    obj.n_flow = n_flow;
+    obj.flow_array = flow_array;
+    obj.constructEverything();
+    obj.stateSanityCheck();
+    
+    utility_coeff =  rand(n_flow,1);
+    utility_coeff = utility_coeff./sum(utility_coeff);
+    utility_form = 'weighted_log_sum';
+    
+    fprintf('\n%s, utility_coeff=[', utility_form);
+    for ii=1:n_flow
+        fprintf( '%f,',utility_coeff(ii));
+    end
+    fprintf( ']\n');
+    
+    tic;
+    [optimal_policy_RAC, optimal_utility_RAC, optimal_throughput_per_flow_RAC] = ...
+        getOptimalSolutionRAC_v(obj, utility_coeff, utility_form);
+    fprintf( '\nFinish getOptimalSolutionRAC with time %f seconds\n', toc);
+    
+    
+    strict_throughput_per_flow = optimal_throughput_per_flow_RAC
+   
+    %for both NUM and fesiblity-fulfilling
+    tic;
+    [successful_transmission_RAC, state_action_distribution_RAC, system_state_RAC, system_action_RAC, state_action_per_slot_RAC ] ...
+        = RACSchedule(obj, T, optimal_policy_RAC);
+    fprintf( '\nFinish RACSchedule with time %f seconds\n', toc);
+ 
+
+    
+    empirical_rate_RAC = sum(successful_transmission_RAC,2)/T
+
+    empirical_utility_RAC = 0;
+    for kk=1:obj.n_flow
+        if(isequal(utility_form, 'weighted_sum'))
+            %weighted sum
+            empirical_utility_RAC = empirical_utility_RAC + utility_coeff(kk)*empirical_rate_RAC(kk);
+        elseif (isequal(utility_form, 'weighted_log_sum'))
+            %weighted log sum
+            empirical_utility_RAC = empirical_utility_RAC + utility_coeff(kk)*log(empirical_rate_RAC(kk));
+        else
+            error('wrong input utility_form, can only be ''weighted_sum'' or ''weighted_log_sum''');
+        end
+    end
+    
+    delta_utility_RAC = (empirical_utility_RAC - optimal_utility_RAC)/optimal_utility_RAC
+    
+    delta_RAC = sum(max(strict_throughput_per_flow - empirical_rate_RAC(:,end), 0))/sum(strict_throughput_per_flow)
+    
+    Rec_delta_utility_RAC(nn) = delta_utility_RAC;
+    Rec_delta_RAC(nn) = delta_RAC;
+    
+    %display the average result up to the current instance
+    mean_delta_utility_RAC = mean(Rec_delta_utility_RAC(1:nn))
+    mean_delta_RAC = mean(Rec_delta_RAC(1:nn))
+    
+    
+    tic;
+    [optimal_policy_RAC_approx_feasibility, optimal_action_distribution_RAC_approx_feasibility] = ...
+        getApproximateSolutionRAC_given_rate(obj, strict_throughput_per_flow);
+    fprintf('\nFinish getApproximateSolutionRAC_given_rate with time %f seconds\n', toc);
+    
+    tic;
+    [successful_transmission_RAC_approx_feasibility, state_action_distribution_RAC_approx_feasibility, system_state_RAC_approx_feasibility, system_action_RAC_approx_feasibility, state_action_per_slot_RAC_approx_feasibility] ...
+        = RelaxedRACSchedule(obj, T, optimal_policy_RAC_approx_feasibility, optimal_action_distribution_RAC_approx_feasibility);
+    fprintf('\nFinish RelaxedRACSchedule for feasibility fulfilling with time %f seconds\n', toc);
+    
+    empirical_rate_RAC_approx_feasibility = sum(successful_transmission_RAC_approx_feasibility,2)/T
+    delta_RAC_approx_feasibility = sum(max(strict_throughput_per_flow - empirical_rate_RAC_approx_feasibility(:,end), 0))/sum(strict_throughput_per_flow)
+    
+    Rec_delta_RAC_approx_feasibility(nn) = delta_RAC_approx_feasibility;
+    mean_delta_RAC_approx_feasibilit = mean(Rec_delta_RAC(1:nn))
+    
+    
+     %for both NUM and fesiblity-fulfilling
+    tic;
+    [successful_transmission_RAC_old, state_action_distribution_RAC_old, system_state_RAC_old, system_action_RAC_old, state_action_per_slot_RAC_old ] ...
+        = RACSchedule_old(obj, T, optimal_policy_RAC);
+    fprintf( '\nFinish RACSchedule with time %f seconds\n', toc);
+ 
+    empirical_rate_RAC_old = sum(successful_transmission_RAC_old,2)/T
+
+    empirical_utility_RAC_old = 0;
+    for kk=1:obj.n_flow
+        if(isequal(utility_form, 'weighted_sum'))
+            %weighted sum
+            empirical_utility_RAC_old = empirical_utility_RAC_old + utility_coeff(kk)*empirical_rate_RAC_old(kk);
+        elseif (isequal(utility_form, 'weighted_log_sum'))
+            %weighted log sum
+            empirical_utility_RAC_old = empirical_utility_RAC_old + utility_coeff(kk)*log(empirical_rate_RAC_old(kk));
+        else
+            error('wrong input utility_form, can only be ''weighted_sum'' or ''weighted_log_sum''');
+        end
+    end
+    
+    delta_utility_RAC_old = (empirical_utility_RAC_old - optimal_utility_RAC)/optimal_utility_RAC
+    
+    delta_RAC_old = sum(max(strict_throughput_per_flow - empirical_rate_RAC_old(:,end), 0))/sum(strict_throughput_per_flow)
+    
+    Rec_delta_utility_RAC_old(nn) = delta_utility_RAC_old;
+    Rec_delta_RAC_old(nn) = delta_RAC_old;
+    
+    %display the average result up to the current instance
+    mean_delta_utility_RAC_old = mean(Rec_delta_utility_RAC_old(1:nn))
+    mean_delta_RAC_old = mean(Rec_delta_RAC_old(1:nn))
+
+    
+
+
+    fprintf( '\nFinish this instance with time %f seconds\n', toc(begin_time_stamp));
+end
+

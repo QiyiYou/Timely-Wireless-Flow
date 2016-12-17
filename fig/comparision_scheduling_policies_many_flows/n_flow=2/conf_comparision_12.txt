@@ -1,0 +1,36 @@
+n_flow=2, n_instance=1, T=1000
+====================================================================
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 2, 0.125904, 0.694299)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 2, 0.619693, 0.545968)
+
+weighted_log_sum, utility_coeff=[0.567934,0.432066,]
+
+Finish getOptimalSolutionRAC with time 4.181437 seconds
+
+Finish getApproximateSolutionRAC with time 4.336197 seconds
+
+Finish RACSchedule with time 0.723184 seconds
+
+Finish RelaxedRACSchedule for NUM with time 0.872188 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 1.482199 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 0.856431 seconds
+
+Finish LDF with time 0.841290 seconds
+
+Finish EPDF with time 0.911713 seconds
+
+Finish LLDF with time 0.893753 seconds
+
+ mean_delta_utility_RAC=-0.014121 
+ mean_delta_utility_RAC_approx=0.012635
+ mean_delta_RAC=0.000000  
+ mean_delta_LLDF=0.046027 
+ mean_delta_LDF=0.053869 
+ mean_delta_RAC_approx=0.178146 
+ mean_delta_EPDF=0.180020
+
+Finish this instance with time 15.555421 seconds

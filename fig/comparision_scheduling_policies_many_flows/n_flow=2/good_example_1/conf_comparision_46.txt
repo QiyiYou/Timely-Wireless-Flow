@@ -1,0 +1,351 @@
+n_flow=2, n_instance=10, T=50000
+====================================================================
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 3, 0.402457, 0.901744)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 5, 0.972077, 0.785630)
+
+weighted_log_sum, utility_coeff=[0.622004,0.377996,]
+
+Finish getOptimalSolutionRAC with time 4.534053 seconds
+
+Finish getApproximateSolutionRAC with time 8.545325 seconds
+
+Finish RACSchedule with time 35.377928 seconds
+
+Finish RelaxedRACSchedule for NUM with time 44.221019 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 1.838049 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 44.239319 seconds
+
+Finish LDF with time 44.939407 seconds
+
+Finish EPDF with time 47.801912 seconds
+
+Finish LLDF with time 48.114767 seconds
+
+ mean_delta_utility_RAC=0.005836 
+ mean_delta_utility_RAC_approx=0.003200
+ mean_delta_RAC=0.010279  
+ mean_delta_LLDF=0.000316 
+ mean_delta_LDF=0.009665 
+ mean_delta_RAC_approx=0.005493 
+ mean_delta_EPDF=0.008664
+
+Finish this instance with time 279.828410 seconds
+====================================================================
+
+Instance 2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 1, 0.082415, 0.166202)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 5, 4, 0.445127, 0.069899)
+
+weighted_log_sum, utility_coeff=[0.329980,0.670020,]
+
+Finish getOptimalSolutionRAC with time 2.240211 seconds
+
+Finish getApproximateSolutionRAC with time 4.737283 seconds
+
+Finish RACSchedule with time 38.283775 seconds
+
+Finish RelaxedRACSchedule for NUM with time 46.927818 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 1.303101 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 46.886902 seconds
+
+Finish LDF with time 47.112945 seconds
+
+Finish EPDF with time 50.459358 seconds
+
+Finish LLDF with time 47.671819 seconds
+
+ mean_delta_utility_RAC=0.005710 
+ mean_delta_utility_RAC_approx=0.003975
+ mean_delta_RAC=0.019134  
+ mean_delta_LLDF=0.041566 
+ mean_delta_LDF=0.015190 
+ mean_delta_RAC_approx=0.012646 
+ mean_delta_EPDF=0.032870
+
+Finish this instance with time 285.658448 seconds
+====================================================================
+
+Instance 3
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 4, 1, 0.126060, 0.797263)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.959922, 0.351330)
+
+weighted_log_sum, utility_coeff=[0.395704,0.604296,]
+
+Finish getOptimalSolutionRAC with time 1.453179 seconds
+
+Finish getApproximateSolutionRAC with time 1.800326 seconds
+
+Finish RACSchedule with time 37.323879 seconds
+
+Finish RelaxedRACSchedule for NUM with time 45.844320 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 0.577376 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 45.855929 seconds
+
+Finish LDF with time 46.137016 seconds
+
+Finish EPDF with time 50.297521 seconds
+
+Finish LLDF with time 47.026065 seconds
+
+ mean_delta_utility_RAC=0.001507 
+ mean_delta_utility_RAC_approx=0.002774
+ mean_delta_RAC=0.016369  
+ mean_delta_LLDF=0.031397 
+ mean_delta_LDF=0.014494 
+ mean_delta_RAC_approx=0.008535 
+ mean_delta_EPDF=0.101775
+
+Finish this instance with time 276.331863 seconds
+====================================================================
+
+Instance 4
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 4, 4, 0.506163, 0.506200)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.025440, 0.861079)
+
+weighted_log_sum, utility_coeff=[0.718145,0.281855,]
+
+Finish getOptimalSolutionRAC with time 1.824310 seconds
+
+Finish getApproximateSolutionRAC with time 2.327811 seconds
+
+Finish RACSchedule with time 36.151965 seconds
+
+Finish RelaxedRACSchedule for NUM with time 44.823546 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 0.585224 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 44.810429 seconds
+
+Finish LDF with time 45.830353 seconds
+
+Finish EPDF with time 48.180865 seconds
+
+Finish LLDF with time 46.605727 seconds
+
+ mean_delta_utility_RAC=0.001108 
+ mean_delta_utility_RAC_approx=0.004811
+ mean_delta_RAC=0.012605  
+ mean_delta_LLDF=0.023547 
+ mean_delta_LDF=0.013983 
+ mean_delta_RAC_approx=0.017442 
+ mean_delta_EPDF=0.079001
+
+Finish this instance with time 271.156563 seconds
+====================================================================
+
+Instance 5
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 3, 3, 0.790028, 0.877730)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 1, 0.625932, 0.757000)
+
+weighted_log_sum, utility_coeff=[0.648056,0.351944,]
+
+Finish getOptimalSolutionRAC with time 1.379605 seconds
+
+Finish getApproximateSolutionRAC with time 1.661530 seconds
+
+Finish RACSchedule with time 35.161380 seconds
+
+Finish RelaxedRACSchedule for NUM with time 43.935292 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 0.533939 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 43.855887 seconds
+
+Finish LDF with time 44.417996 seconds
+
+Finish EPDF with time 47.873199 seconds
+
+Finish LLDF with time 47.060052 seconds
+
+ mean_delta_utility_RAC=0.001075 
+ mean_delta_utility_RAC_approx=0.002923
+ mean_delta_RAC=0.010364  
+ mean_delta_LLDF=0.019748 
+ mean_delta_LDF=0.014551 
+ mean_delta_RAC_approx=0.013954 
+ mean_delta_EPDF=0.063702
+
+Finish this instance with time 265.893289 seconds
+====================================================================
+
+Instance 6
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.628249, 0.812718)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.940832, 0.070243)
+
+weighted_log_sum, utility_coeff=[0.715941,0.284059,]
+
+Finish getOptimalSolutionRAC with time 1.526378 seconds
+
+Finish getApproximateSolutionRAC with time 1.667041 seconds
+
+Finish RACSchedule with time 35.583501 seconds
+
+Finish RelaxedRACSchedule for NUM with time 44.136001 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 0.445751 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 44.186649 seconds
+
+Finish LDF with time 44.337688 seconds
+
+Finish EPDF with time 46.833643 seconds
+
+Finish LLDF with time 46.252770 seconds
+
+ mean_delta_utility_RAC=-0.020777 
+ mean_delta_utility_RAC_approx=-0.013463
+ mean_delta_RAC=0.008637  
+ mean_delta_LLDF=0.016457 
+ mean_delta_LDF=0.012126 
+ mean_delta_RAC_approx=0.011628 
+ mean_delta_EPDF=0.053085
+
+Finish this instance with time 264.981497 seconds
+====================================================================
+
+Instance 7
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 2, 0.520796, 0.663209)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 1, 0.666329, 0.752602)
+
+weighted_log_sum, utility_coeff=[0.430222,0.569778,]
+
+Finish getOptimalSolutionRAC with time 1.837586 seconds
+
+Finish getApproximateSolutionRAC with time 1.763918 seconds
+
+Finish RACSchedule with time 35.476697 seconds
+
+Finish RelaxedRACSchedule for NUM with time 44.257469 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 0.576350 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 44.139515 seconds
+
+Finish LDF with time 45.042494 seconds
+
+Finish EPDF with time 49.699637 seconds
+
+Finish LLDF with time 46.543651 seconds
+
+ mean_delta_utility_RAC=-0.017797 
+ mean_delta_utility_RAC_approx=-0.012071
+ mean_delta_RAC=0.007768  
+ mean_delta_LLDF=0.014581 
+ mean_delta_LDF=0.010674 
+ mean_delta_RAC_approx=0.010530 
+ mean_delta_EPDF=0.046284
+
+Finish this instance with time 269.353385 seconds
+====================================================================
+
+Instance 8
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 1, 1, 0.852473, 0.576911)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 1, 1, 0.876561, 0.234662)
+
+weighted_log_sum, utility_coeff=[0.606590,0.393410,]
+
+Finish getOptimalSolutionRAC with time 3.660838 seconds
+
+Finish getApproximateSolutionRAC with time 1.339041 seconds
+
+Finish RACSchedule with time 35.028423 seconds
+
+Finish RelaxedRACSchedule for NUM with time 45.703186 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 0.529700 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 45.446335 seconds
+
+Finish LDF with time 44.223629 seconds
+
+Finish EPDF with time 46.128001 seconds
+
+Finish LLDF with time 46.666499 seconds
+
+ mean_delta_utility_RAC=-0.107037 
+ mean_delta_utility_RAC_approx=-0.093830
+ mean_delta_RAC=0.076992  
+ mean_delta_LLDF=0.012758 
+ mean_delta_LDF=0.010134 
+ mean_delta_RAC_approx=0.067314 
+ mean_delta_EPDF=0.040499
+
+Finish this instance with time 268.736005 seconds
+====================================================================
+
+Instance 9
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 2, 0.732877, 0.311509)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (1, 4, 3, 0.482463, 0.737304)
+
+weighted_log_sum, utility_coeff=[0.001106,0.998894,]
+
+Finish getOptimalSolutionRAC with time 2.328652 seconds
+
+Finish getApproximateSolutionRAC with time 6.713645 seconds
+
+Finish RACSchedule with time 36.440474 seconds
+
+Finish RelaxedRACSchedule for NUM with time 45.239425 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 1.806624 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 45.531293 seconds
+
+Finish LDF with time 45.811540 seconds
+
+Finish EPDF with time 48.354753 seconds
+
+Finish LLDF with time 46.839480 seconds
+
+ mean_delta_utility_RAC=-0.095327 
+ mean_delta_utility_RAC_approx=-0.084144
+ mean_delta_RAC=0.068494  
+ mean_delta_LLDF=0.011621 
+ mean_delta_LDF=0.009180 
+ mean_delta_RAC_approx=0.060339 
+ mean_delta_EPDF=0.039148
+
+Finish this instance with time 279.109218 seconds
+====================================================================
+
+Instance 10
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 1, 1, 0.748409, 0.004998)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.471860, 0.872778)
+
+weighted_log_sum, utility_coeff=[0.537810,0.462190,]
+
+Finish getOptimalSolutionRAC with time 1.873566 seconds
+
+Finish getApproximateSolutionRAC with time 2.139027 seconds
+
+Finish RACSchedule with time 35.586347 seconds
+
+Finish RelaxedRACSchedule for NUM with time 44.504133 seconds
+
+Finish getApproximateSolutionRAC_given_rate with time 0.443574 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 44.426925 seconds
+
+Finish LDF with time 45.313158 seconds
+
+Finish EPDF with time 44.851215 seconds
+
+Finish LLDF with time 43.851234 seconds
+
+ mean_delta_utility_RAC=-0.094467 
+ mean_delta_utility_RAC_approx=-0.078399
+ mean_delta_RAC=0.061645  
+ mean_delta_LLDF=0.010459 
+ mean_delta_LDF=0.008262 
+ mean_delta_RAC_approx=0.054310 
+ mean_delta_EPDF=0.035233
+
+Finish this instance with time 263.001208 seconds

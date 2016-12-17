@@ -1,151 +1,253 @@
-clear all; close all; 
+clear all; close all;
 
-n_flow = 10
+%remember to creates a different seed each time
+rng shuffle 
+%select gurobi to solve the LP, much faster than the default SDP3
+%cvx_solver gurobi_3  %for LP
+%cvx_solver SDPT3  %for convex
+cvx_solver SeDuMi 
+cvx_save_prefs
 
-filePath = sprintf('fig/comparision_scheduling_policies/n_flow=%d',n_flow);
-fileID = fopen(sprintf('%s/conf_comparision.txt',filePath),'w');
+n_flow=6
+filePath = sprintf('fig/comparision_scheduling_policies_many_flows/n_flow=%d',n_flow);
 
-
-flow1 = NonOverlappedFlowInstance();
-flow1.offset = 0;
-flow1.period = 4;
-flow1.delay = 4;
-flow1.arrival_prob = 1;
-flow1.success_prob = 0.5;
-flow1.constructEverything();
-
-flow2 = NonOverlappedFlowInstance();
-flow2.offset = 2;
-flow2.period = 4;
-flow2.delay = 4;
-flow2.arrival_prob = 1;
-flow2.success_prob = 0.5;
-flow2.constructEverything();
-
-%iid traffic
-% flow3 = FlowInstance();
-% flow3.offset = 0;
-% flow3.period = 1;
-% flow3.delay = 3;
-% flow3.arrival_prob =  0.9;
-% flow3.success_prob = 0.7;
-% flow3.constructEverything();
-
-flow_array = cell(n_flow,1);
-for ii=1:n_flow
-    if(mod(ii,2) == 1)
-        flow_array{ii} = flow1;
+%find the next number for the configuration file
+next_conf = 1;
+while(1)
+    if(exist(sprintf('%s/conf_comparision_%d.txt',filePath, next_conf), 'file') == 2)
+        next_conf = next_conf + 1;
     else
-        flow_array{ii} = flow2;
+        break;
     end
 end
+fileID = fopen(sprintf('%s/conf_comparision_%d.txt',filePath, next_conf),'w');
 
 
-for ii=1:n_flow
-    fprintf(fileID, '\nFlow %d: (offset, period, delay, success_prob) = (%d, %d, %d, %f), ', ii, flow_array{ii}.offset, ...
-        flow_array{ii}.period, flow_array{ii}.delay, flow_array{ii}.success_prob);
-    fprintf(fileID, 'arrival_prob = (');
-    for jj=1:length(flow_array{ii}.arrival_prob)
-        fprintf(fileID, '%f, ', flow_array{ii}.arrival_prob(jj));
+n_instance=1
+T=100
+fprintf(fileID, 'n_flow=%d, n_instance=%d, T=%d\n', n_flow, n_instance, T);
+
+    
+Rec_delta_LDF = zeros(n_instance,1);
+Rec_delta_EPDF = zeros(n_instance,1);
+Rec_delta_LLDF = zeros(n_instance,1);
+Rec_delta_RAC = zeros(n_instance,1);
+Rec_delta_RAC_approx = zeros(n_instance,1);
+
+Rec_delta_utility_RAC = zeros(n_instance,1);
+Rec_delta_utility_RAC_approx = zeros(n_instance,1);
+
+for nn=1:n_instance
+    begin_time_stamp=tic;
+    nn
+    fprintf(fileID, '====================================================================\n');
+    fprintf(fileID, '\nInstance %d\n', nn);
+
+    flow_array = cell(n_flow,1);
+    for ii=1:n_flow
+        flow = NonOverlappedFlowInstance();
+        flow.offset = randi([1,5]);
+        flow.period = randi([2,5]);
+        flow.delay = randi([2,flow.period]);
+        flow.arrival_prob = rand;
+        flow.success_prob = rand;
+        flow.constructEverything();
+        flow_array{ii} = flow;
     end
-    fprintf(fileID, ')\n');
+    
+    
+    for ii=1:n_flow
+        fprintf(fileID, 'Flow %d: (offset, period, delay, success_prob, arrival_prob) = (%d, %d, %d, %f, %f)\n', ii, flow_array{ii}.offset, ...
+            flow_array{ii}.period, flow_array{ii}.delay, flow_array{ii}.success_prob,  flow_array{ii}.arrival_prob(1));
+    end
+    
+    obj = DownlinkAPInstance();
+    obj.n_flow = n_flow;
+    obj.flow_array = flow_array;
+    obj.constructEverything();
+    obj.stateSanityCheck();
+    
+    %utility_coeff =  rand(n_flow,1);
+    utility_coeff =  ones(n_flow,1);
+    utility_coeff = utility_coeff./sum(utility_coeff);
+    utility_form = 'weighted_log_sum';
+    %utility_form = 'weighted_sum';
+    
+    fprintf(fileID, '\n%s, utility_coeff=[', utility_form);
+    for ii=1:n_flow
+        fprintf(fileID, '%f,',utility_coeff(ii));
+    end
+    fprintf(fileID, ']\n');
+    
+    tic;
+    [optimal_policy_RAC, optimal_utility_RAC, optimal_throughput_per_flow_RAC, status] = ...
+        getOptimalSolutionRAC_v(obj, utility_coeff, utility_form);
+    fprintf(fileID, '\nFinish getOptimalSolutionRAC with time %f seconds\n', toc);
+    fprintf(fileID, '\nstatus=%s\n', status);
+    
+    status
+    if(~strcmp(status, 'Solved'))
+        fprintf('getOptimalSolutionRAC_v not solved, igonre this instance\n');
+        continue;
+    end
+    
+    
+    tic;
+    [optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx, optimal_utility_RAC_approx, optimal_throughput_per_flow_RAC_approx, status] = ...
+        getApproximateSolutionRAC(obj, utility_coeff, utility_form);
+    fprintf(fileID, '\nFinish getApproximateSolutionRAC with time %f seconds\n', toc);
+    fprintf(fileID, '\nstatus=%s\n', status);
+
+    
+    status
+    if(~strcmp(status, 'Solved'))
+        fprintf('getApproximateSolutionRAC not solved, igonre this instance\n');
+        continue;
+    end
+    
+    pause();
+    
+    %RAC or RAC_Approx are not correctly solved
+    if(sum(isnan(optimal_throughput_per_flow_RAC)) > 0 || sum(isnan(optimal_throughput_per_flow_RAC_approx)) > 0)
+        fprintf('RAC or RAC_Approx are not correctly solved\n');
+        continue;
+    end
+   
+    fprintf('begin to do RACSchedule...\n');
+    %for both NUM and fesiblity-fulfilling
+    tic;
+    [successful_transmission_RAC, state_action_distribution_RAC, system_state_RAC, system_action_RAC, state_action_per_slot_RAC ] ...
+        = RACSchedule(obj, T, optimal_policy_RAC);
+    fprintf(fileID, '\nFinish RACSchedule with time %f seconds\n', toc);
+    
+    
+    fprintf('begin to do RelaxedRACSchedule...\n');
+    %for NUM
+    tic;
+    [successful_transmission_RAC_approx, state_action_distribution_RAC_approx, system_state_RAC_approx, system_action_RAC_approx, state_action_per_slot_RAC_approx] ...
+        = RelaxedRACSchedule(obj, T, optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx);
+    fprintf(fileID, '\nFinish RelaxedRACSchedule for NUM with time %f seconds\n', toc);
+    
+    
+    epsilon = 0;
+    %strict_throughput_per_flow = max(throughput_per_flow - epsilon, 0);
+    % let us use optimal throughput from RAC optmization problem
+    strict_throughput_per_flow = max(optimal_throughput_per_flow_RAC - epsilon, 0)
+    
+    tic;
+    [optimal_policy_RAC_approx_feasibility, optimal_action_distribution_RAC_approx_feasibility, status] = ...
+        getApproximateSolutionRAC_given_rate(obj, strict_throughput_per_flow);
+    fprintf(fileID, '\nFinish getApproximateSolutionRAC_given_rate with time %f seconds\n', toc);
+    fprintf(fileID, '\nstatus=%s\n', status);
+      
+    status
+    if(~strcmp(status, 'Solved'))
+        fprintf('getApproximateSolutionRAC_given_rate not solved, igonre this instance\n');
+        continue;
+    end
+    
+    fprintf('begin to do RelaxedRACSchedule for a given rate...\n');
+    tic;
+    [successful_transmission_RAC_approx_feasibility, state_action_distribution_RAC_approx_feasibility, system_state_RAC_approx_feasibility, system_action_RAC_approx_feasibility, state_action_per_slot_RAC_approx_feasibility] ...
+        = RelaxedRACSchedule(obj, T, optimal_policy_RAC_approx_feasibility, optimal_action_distribution_RAC_approx_feasibility);
+    fprintf(fileID, '\nFinish RelaxedRACSchedule for feasibility fulfilling with time %f seconds\n', toc);
+    
+    
+    tic;
+    [successful_transmission_LDF, virtual_arrival_LDF, virtual_server_capacity_LDF, virtual_departure_LDF,  virtual_queue_LDF, state_action_distribution_LDF, ...
+        Rec_system_state_LDF, Rec_system_action_LDF, Rec_state_action_per_slot_LDF] = ...
+        LDF(obj, T, strict_throughput_per_flow);
+    fprintf(fileID, '\nFinish LDF with time %f seconds\n', toc);
+    
+    tic;
+    [successful_transmission_EPDF, virtual_arrival_EPDF, virtual_server_capacity_EPDF, virtual_departure_EPDF,  virtual_queue_EPDF, state_action_distribution_EPDF, ...
+        Rec_system_state_EPDF, Rec_system_action_EPDF, Rec_state_action_per_slot_EPDF] = ...
+        EPDF(obj, T, strict_throughput_per_flow);
+    fprintf(fileID, '\nFinish EPDF with time %f seconds\n', toc);
+    
+    tic;
+    [successful_transmission_LLDF, virtual_arrival_LLDF, virtual_server_capacity_LLDF, virtual_departure_LLDF,  virtual_queue_LLDF, state_action_distribution_LLDF, ...
+        Rec_system_state_LLDF, Rec_system_action_LLDF, Rec_state_action_per_slot_LLDF] = ...
+        LLDF(obj, T, strict_throughput_per_flow);
+    fprintf(fileID, '\nFinish LLDF with time %f seconds\n', toc);
+    
+    empirical_rate_LDF = sum(successful_transmission_LDF,2)/T;
+    empirical_rate_EPDF = sum(successful_transmission_EPDF,2)/T;
+    empirical_rate_LLDF = sum(successful_transmission_LLDF,2)/T;
+    empirical_rate_RAC = sum(successful_transmission_RAC,2)/T;
+    empirical_rate_RAC_approx = sum(successful_transmission_RAC_approx,2)/T;
+    empirical_rate_RAC_approx_feasibility = sum(successful_transmission_RAC_approx_feasibility,2)/T;
+    
+    %for NUM
+    %empirical utility for RAC scheduler and RAC-Approx scheduler
+    empirical_utility_RAC = 0;
+    empirical_utility_RAC_approx = 0;
+    for kk=1:obj.n_flow
+        if(isequal(utility_form, 'weighted_sum'))
+            %weighted sum
+            empirical_utility_RAC = empirical_utility_RAC + utility_coeff(kk)*empirical_rate_RAC(kk);
+            empirical_utility_RAC_approx = empirical_utility_RAC_approx + utility_coeff(kk)*empirical_rate_RAC_approx(kk);
+        elseif (isequal(utility_form, 'weighted_log_sum'))
+            %weighted log sum
+            empirical_utility_RAC = empirical_utility_RAC + utility_coeff(kk)*log(empirical_rate_RAC(kk));
+            empirical_utility_RAC_approx = empirical_utility_RAC_approx + utility_coeff(kk)*log(empirical_rate_RAC_approx(kk));
+        else
+            error('wrong input utility_form, can only be ''weighted_sum'' or ''weighted_log_sum''');
+        end
+    end
+    
+    delta_utility_RAC = (empirical_utility_RAC - optimal_utility_RAC)/optimal_utility_RAC;
+    delta_utility_RAC_approx = (empirical_utility_RAC_approx - optimal_utility_RAC)/optimal_utility_RAC;
+    
+    %for feasibility-fulfilling
+    delta_LDF = sum(max(strict_throughput_per_flow - empirical_rate_LDF, 0))/sum(strict_throughput_per_flow);
+    delta_EPDF = sum(max(strict_throughput_per_flow - empirical_rate_EPDF(:,end), 0))/sum(strict_throughput_per_flow);
+    delta_LLDF = sum(max(strict_throughput_per_flow - empirical_rate_LLDF(:,end), 0))/sum(strict_throughput_per_flow);
+    delta_RAC = sum(max(strict_throughput_per_flow - empirical_rate_RAC(:,end), 0))/sum(strict_throughput_per_flow);
+    delta_RAC_approx = sum(max(strict_throughput_per_flow - empirical_rate_RAC_approx(:,end), 0))/sum(strict_throughput_per_flow);
+    
+    if(delta_RAC < 1) %there are some wrong-solve cases such that delta_RAC ect. are very large
+        Rec_delta_LDF(nn) = delta_LDF;
+        Rec_delta_EPDF(nn) = delta_EPDF;
+        Rec_delta_LLDF(nn) = delta_LLDF;
+        Rec_delta_RAC(nn) = delta_RAC;
+        Rec_delta_RAC_approx(nn) = delta_RAC_approx;
+        
+        Rec_delta_utility_RAC(nn) = delta_utility_RAC;
+        Rec_delta_utility_RAC_approx(nn) = delta_utility_RAC_approx;
+    end
+    
+    %display the average result up to the current instance
+    mean_delta_utility_RAC = mean(Rec_delta_utility_RAC(1:nn))
+    mean_delta_utility_RAC_approx = mean(Rec_delta_utility_RAC_approx(1:nn))
+    
+    mean_delta_LDF = mean(Rec_delta_LDF(1:nn))
+    mean_delta_EPDF = mean(Rec_delta_EPDF(1:nn))
+    mean_delta_LLDF = mean(Rec_delta_LLDF(1:nn))
+    mean_delta_RAC = mean(Rec_delta_RAC(1:nn))
+    mean_delta_RAC_approx = mean(Rec_delta_RAC_approx(1:nn))
+
+    fprintf(fileID, '\n mean_delta_utility_RAC=%f \n mean_delta_utility_RAC_approx=%f', ...
+    mean_delta_utility_RAC, mean_delta_utility_RAC_approx);
+    fprintf(fileID, '\n mean_delta_RAC=%f  \n mean_delta_LLDF=%f \n mean_delta_LDF=%f \n mean_delta_RAC_approx=%f \n mean_delta_EPDF=%f\n', ...
+    mean_delta_RAC, mean_delta_LLDF, mean_delta_LDF, mean_delta_RAC_approx, mean_delta_EPDF);
+
+    fprintf(fileID, '\nFinish this instance with time %f seconds\n', toc(begin_time_stamp));
 end
 
-obj = DownlinkAPInstance();
-obj.n_flow = n_flow;
-obj.flow_array = flow_array;
-obj.constructEverything();
-obj.stateSanityCheck();
+% mean_delta_utility_RAC = mean(Rec_delta_utility_RAC)
+% mean_delta_utility_RAC_approx = mean(Rec_delta_utility_RAC_approx)
+% 
+% mean_delta_LDF = mean(Rec_delta_LDF)
+% mean_delta_EPDF = mean(Rec_delta_EPDF)
+% mean_delta_LLDF = mean(Rec_delta_LLDF)
+% mean_delta_RAC = mean(Rec_delta_RAC)
+% mean_delta_RAC_approx = mean(Rec_delta_RAC_approx)
 
-utility_coeff =  ones(n_flow,1);
-utility_coeff = utility_coeff./sum(utility_coeff);
-utility_form = 'weighted_sum';
+% fprintf(fileID, '\n mean_delta_utility_RAC=%f, \n mean_delta_utility_RAC_approx=%f', ...
+%     mean_delta_utility_RAC, mean_delta_utility_RAC_approx);
+% fprintf(fileID, '\n mean_delta_RAC=%f,  \n mean_delta_LLDF=%f, mean_delta_LDF=%f, \n mean_delta_RAC_approx=%f,\n mean_delta_EPDF=%f\n', ...
+%     mean_delta_RAC, mean_delta_LLDF, mean_delta_LDF, mean_delta_RAC_approx, mean_delta_EPDF);
 
-fprintf(fileID, '\n%s, utility_coeff=[', utility_form);
-for ii=1:n_flow
-    fprintf(fileID, '%f,',utility_coeff(ii));
-end
-fprintf(fileID, ']\n');
-
-tic;
-[optimal_policy_RAC, optimal_utility_RAC, optimal_throughput_per_flow_RAC] = ...
-    getOptimalSolutionRAC(obj, utility_coeff, utility_form);
-fprintf(fileID, '\nFinish getOptimalSolutionRAC with time %f seconds\n', toc);
-
-
-
-tic;
-[optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx, optimal_utility_RAC_approx, optimal_throughput_per_flow_RAC_approx] = ...
-    getApproximateSolutionRAC(obj, utility_coeff, utility_form);
-fprintf(fileID, '\nFinish getApproximateSolutionRAC with time %f seconds\n', toc);
-
-
-
-
-T = 6000
-
-tic;
-[successful_transmission_RAC, state_action_distribution_RAC, system_state_RAC, system_action_RAC, state_action_per_slot_RAC ] ...
-    = RACSchedule(obj, T, optimal_policy_RAC);
-fprintf(fileID, '\nFinish RACSchedule with time %f seconds\n', toc);
-
-
-
-tic;
-[successful_transmission_RAC_approx, state_action_distribution_RAC_approx, system_state_RAC_approx, system_action_RAC_approx, state_action_per_slot_RAC_approx] ...
- = RelaxedRACSchedule(obj, T, optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx);
-fprintf(fileID, '\nFinish RelaxedRACSchedule with time %f seconds\n', toc);
-
-
-epsilon = 0;
-%strict_throughput_per_flow = max(throughput_per_flow - epsilon, 0);
-% let us use optimal throughput from RAC optmization problem
-strict_throughput_per_flow = max(optimal_throughput_per_flow_RAC - epsilon, 0);
-
-tic;
-[successful_transmission_LLDF, virtual_arrival_LLDF, virtual_server_capacity_LLDF, virtual_departure_LLDF,  virtual_queue_LLDF, state_action_distribution_LLDF, ...
- Rec_system_state_LLDF, Rec_system_action_LLDF, Rec_state_action_per_slot_LLDF] = ...
-    LLDF(obj, T, strict_throughput_per_flow);
-fprintf(fileID, '\nFinish LLDF with time %f seconds\n', toc);
-
-cummean_successful_transmission_LLDF = cummean(successful_transmission_LLDF,2);
-cummean_successful_transmission_RAC = cummean(successful_transmission_RAC,2);
-cummean_successful_transmission_RAC_approx = cummean(successful_transmission_RAC_approx,2);
-
-save(sprintf('%s/comparision_scheduling_flow_.mat',filePath));
-%load('fig/comparision_scheduling_policies/n_flow=3/comparision_scheduling_flow_.mat');
-
-for nn=1:obj.n_flow
-    figure;
-    font_size = 25;
-    line_width = 3;
-    set(gca,'FontSize',font_size);
-    hold on;
-     plot(1:T,cummean_successful_transmission_LLDF(nn,:), '-', 'color', [0,0,0], 'Linewidth', line_width);
-     plot(1:T,cummean_successful_transmission_RAC_approx(nn,:), '-', 'color', [0,0.78,0], 'Linewidth', line_width);
-    plot(1:T,cummean_successful_transmission_RAC(nn,:), '-b', 'Linewidth', line_width);
-    plot(1:T,optimal_throughput_per_flow_RAC(nn).*ones(1,T), '-.r', 'Linewidth', line_width);
-    hold off;
-    xlabel('Slot','FontSize', font_size, 'FontName', 'Arial');
-    ylabel('Running Timely Throu.','FontSize', font_size, 'FontName', 'Arial');
-    %legend('EPDF', 'LDF', 'L-LDF', 'RAC-Approx', 'Finite-MDP', 'RAC', 'Optimal', 'Location', 'Northeast');
-    legend('L-LDF', 'RAC-Approx', 'RAC', 'Optimal', 'Location', 'Northeast');
-    %legend('RAC-Approx', 'RAC', 'Optimal', 'Location', 'Northeast');
-%     if(nn==3)
-%         ylim([0.1,0.5]);
-%     else
-%         ylim([0.1,0.3]);
-%     end
-    %title(sprintf('%d flows, ',obj.n_flow));
-    box on;
-    grid off;
-%     print(sprintf('%s/comparision_scheduling_flow_%d',filePath, nn),'-dpdf');
-%     print(sprintf('%s/comparision_scheduling_flow_%d',filePath, nn),'-depsc');
-    export_fig(sprintf('%s/comparision_scheduling_flow_%d',filePath, nn), '-pdf','-transparent','-nocrop');
-    export_fig(sprintf('%s/comparision_scheduling_flow_%d',filePath, nn), '-eps','-transparent','-nocrop');
-end
-
-
-
-
+save(sprintf('%s/comparision_scheduling_flow_%d.mat',filePath,next_conf));
 

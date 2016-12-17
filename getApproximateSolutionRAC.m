@@ -1,4 +1,4 @@
-function [optimal_policy, optimal_action_distribution, optimal_utility, optimal_throughput_per_flow] = getApproximateSolutionRAC(obj, utility_coeff, utility_form)
+function [optimal_policy, optimal_action_distribution, optimal_utility, optimal_throughput_per_flow, status] = getApproximateSolutionRAC(obj, utility_coeff, utility_form)
 % use the RAC approximate formulation to get the
 % optimal utility, we can use either weighted sum or weithed log sum here
 % obj: DownlinkAPInstanceFromFlowInstance
@@ -73,6 +73,12 @@ cvx_begin
             sum(squeeze(x(kk,tt,1:n_state))) == 1;
             sum(sum(squeeze(z(kk,tt,1:n_state,:)))) == 1;
             x(kk,tt,1:n_state) == sum(z(kk,tt,1:n_state,:),4);
+            
+            if(n_state < max_n_state)
+                x(kk,tt, n_state+1:end) == 0;
+                z(kk,tt,n_state+1:end,:) == 0;
+            end
+            
         end
     end
     
@@ -135,6 +141,7 @@ cvx_begin
         fprintf('begin to solve the optimization problem\n');
 cvx_end
 
+status = cvx_status;
 optimal_policy = z;
 optimal_action_distribution = z_action;
 optimal_utility = Objective;

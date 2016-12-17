@@ -1,4 +1,4 @@
-function [optimal_policy, optimal_utility, optimal_throughput_per_flow] = getOptimalSolutionRAC_v(obj, utility_coeff, utility_form)
+function [optimal_policy, optimal_utility, optimal_throughput_per_flow, status] = getOptimalSolutionRAC_v(obj, utility_coeff, utility_form)
 % use the RAC formulation (Proposition 4 in Mobihoc 2015) to get the
 % optimal utility, we can use either weighted sum or weithed log sum here
 % obj: DownlinkAPInstanceFromFlowInstance
@@ -67,7 +67,22 @@ cvx_begin
         fprintf('begin to solve the optimization problem\n');
 cvx_end
 
-optimal_policy = w; %we take a transpose here to make it consistence with getOptimalSolutionRAC
+
+%y is the joint distribution of state and action, y(t, i, j) is the joint
+%probability that the system is in state i and takes action j at slot t
+% see variable y(obj.period_lcm, obj.n_state, obj.n_action) in getOptimalSolutionRAC
+optimal_policy = zeros(obj.period_lcm, obj.n_state, obj.n_action); 
+for hh=1:obj.period_lcm
+    for ss=1:obj.n_state
+        for aa=1:obj.n_action
+            idx = obj.getIdxFromStateAction(ss,aa);
+            optimal_policy(hh, ss, aa) = w(idx, hh);
+        end
+    end
+end
+
+
+status = cvx_status;
 optimal_utility = Objective;
 optimal_throughput_per_flow = r;
 

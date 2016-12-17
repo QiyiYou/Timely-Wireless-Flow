@@ -156,9 +156,18 @@ classdef DownlinkAPInstance < handle
             end
             obj.n_action = obj.n_flow;
             obj.n_state_action = obj.n_state*obj.n_action;
+            tic;
             obj.Psi = obj.constructPsi();
+            fprintf('obj.constructPsi()\n');
+            toc;
+            tic;
             obj.Pv = obj.constructPv();
+            fprintf('obj.constructPv()\n');
+            toc;
+            tic;
             obj.theta = obj.constructTheta();
+            fprintf('obj.constructTheta()\n');
+            toc;
         end
         
         function [state] = getStateFromVector(obj, state_vec)
@@ -427,7 +436,7 @@ classdef DownlinkAPInstance < handle
                     end
                 end
                 
-                %"shufflw the row of current_Pv such that its indicies are in
+                %"shuffle the row of current_Pv such that its indicies are in
                 %line with the state_action representation
                 for aa=1:obj.n_action
                     Pv(aa:obj.n_action:end, :, hh) = current_Pv{aa};
