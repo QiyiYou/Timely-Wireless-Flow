@@ -20,7 +20,7 @@ flow2.offset = 0;
 flow2.period = 2;
 flow2.delay = 2;
 flow2.arrival_prob = 1;
-flow2.success_prob = 0.9;
+flow2.success_prob = 0.8;
 flow2.constructEverything();
 
 

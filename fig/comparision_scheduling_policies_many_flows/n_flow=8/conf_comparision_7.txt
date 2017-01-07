@@ -1,0 +1,30 @@
+n_flow=8, n_instance=1, T=1000
+====================================================================
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.861000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 3, 0.738000, 1.000000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 4, 0.852000, 1.000000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.574000, 1.000000)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 5, 0.801000, 1.000000)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 2, 0.980000, 1.000000)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.746000, 1.000000)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.635000, 1.000000)
+
+weighted_log_sum, utility_coeff=[0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,]
+
+Finish getApproximateSolutionRAC with time 14.269825 seconds
+
+status=Solved
+
+Finish getOptimalSolutionRAC with time 11.518676 seconds
+
+status=Solved
+
+Finish getApproximateSolutionRAC_given_rate with time 10.690315 seconds
+
+status=Solved
+
+Finish RACSchedule with time 2.794741 seconds
+
+Finish RelaxedRACSchedule for NUM with time 12.923186 seconds

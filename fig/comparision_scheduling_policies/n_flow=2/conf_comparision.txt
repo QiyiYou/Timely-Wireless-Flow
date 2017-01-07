@@ -1,14 +1,10 @@
 
-Flow 1: (offset, period, delay, success_prob) = (0, 4, 4, 0.500000), arrival_prob = (1.000000, )
+Flow 1: (offset, period, delay, success_prob) = (0, 2, 2, 0.500000), arrival_prob = (1.000000, )
 
-Flow 2: (offset, period, delay, success_prob) = (2, 4, 4, 0.500000), arrival_prob = (1.000000, )
+Flow 2: (offset, period, delay, success_prob) = (0, 2, 2, 0.500000), arrival_prob = (1.000000, )
 
 weighted_log_sum, utility_coeff=[0.500000,0.500000,]
 
-Finish getOptimalSolutionRACFromFlowInstance_CVX with time 9.205692 seconds
+Finish getOptimalSolutionRAC with time 2.135250 seconds
 
-Finish getApproximateSolutionRACFromFlowInstance_CVX with time 5.127483 seconds
-
-Finish RACSchedule with time 67.792867 seconds
-
-Finish LLDF with time 97.561281 seconds
+Finish getApproximateSolutionRAC with time 1.247610 seconds

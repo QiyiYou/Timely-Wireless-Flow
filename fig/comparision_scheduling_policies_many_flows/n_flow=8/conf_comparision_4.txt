@@ -1,0 +1,55 @@
+n_flow=8, n_instance=1, T=100
+====================================================================
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.534000, 0.761000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (3, 2, 2, 0.668000, 0.588000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (2, 2, 2, 0.926000, 0.844000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 3, 0.943000, 0.645000)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (2, 5, 5, 0.538000, 0.863000)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (2, 3, 2, 0.630000, 0.558000)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 4, 0.665000, 0.617000)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (4, 2, 2, 0.620000, 0.809000)
+
+weighted_log_sum, utility_coeff=[0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,0.125000,]
+
+Finish getApproximateSolutionRAC with time 83.314110 seconds
+
+status=Solved
+
+Finish getOptimalSolutionRAC with time 714.947978 seconds
+
+status=Solved
+
+Finish getApproximateSolutionRAC_given_rate with time 70.559410 seconds
+
+status=Solved
+
+Finish RACSchedule with time 0.659562 seconds
+
+Finish RelaxedRACSchedule for NUM with time 0.387860 seconds
+
+Finish RelaxedRACSchedule for feasibility fulfilling with time 0.311539 seconds
+
+Finish LDF with time 0.312944 seconds
+
+Finish EPDF with time 0.288721 seconds
+
+Finish LLDF with time 0.344218 seconds
+
+ mean_delta_utility_RAC=0.432265 
+ mean_delta_utility_RAC_approx=0.033090
+ mean_delta_RAC=0.608961  
+ mean_delta_LLDF=0.144622 
+ mean_delta_LDF=0.221199 
+ mean_delta_RAC_approx=0.165793 
+ mean_delta_EPDF=0.242194
+
+Finish this instance with time 880.147085 seconds
+
+ mean_delta_utility_RAC=0.432265, 
+ mean_delta_utility_RAC_approx=0.033090
+ mean_delta_RAC=0.608961,  
+ mean_delta_LLDF=0.144622, mean_delta_LDF=0.221199, 
+ mean_delta_RAC_approx=0.165793,
+ mean_delta_EPDF=0.242194

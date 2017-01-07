@@ -16,3 +16,7 @@ weighted_log_sum, utility_coeff=[0.125000,0.125000,0.125000,0.125000,0.125000,0.
 Finish getApproximateSolutionRAC with time 109.456766 seconds
 
 status=Solved
+
+Finish getOptimalSolutionRAC with time 1231.264809 seconds
+
+status=Inaccurate/Solved

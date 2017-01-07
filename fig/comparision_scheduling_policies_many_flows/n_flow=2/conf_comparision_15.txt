@@ -1,8 +1,0 @@
-n_flow=2, n_instance=1, T=10000
-====================================================================
-
-Instance 1
-Flow 1: (offset, period, delay, success_prob, arrival_prob) = (4, 3, 2, 0.747226, 0.281016)
-Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 2, 0.510475, 0.011514)
-
-weighted_log_sum, utility_coeff=[0.500000,0.500000,]

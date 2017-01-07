@@ -1,0 +1,27 @@
+N_flow=20, N_lambda_instance=1
+
+n_flow=20
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 7: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 8: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 9: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 10: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 11: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 12: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 13: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 14: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 15: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 16: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 17: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 18: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 19: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+Flow 20: (offset, period, delay, success_prob, arrival_prob) = (0, 26, 26, 0.800000, 1.000000)
+lambda=[100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, 100.000000, ]
+x=0.000375, r0_opt=0.000384, ratio=1.022815
+
+ration=[1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,1.022815,]

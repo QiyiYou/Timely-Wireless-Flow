@@ -1,36 +1,43 @@
-n_flow=2, n_instance=1, T=50000
+n_flow=2, n_instance=1, T=100000
 ====================================================================
 
 Instance 1
-Flow 1: (offset, period, delay, success_prob, arrival_prob) = (5, 4, 1, 0.050523, 0.161183)
-Flow 2: (offset, period, delay, success_prob, arrival_prob) = (5, 3, 1, 0.600715, 0.243691)
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 5, 0.736215, 0.457289)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 4, 0.720407, 0.104015)
 
-weighted_log_sum, utility_coeff=[0.572981,0.427019,]
+weighted_log_sum, utility_coeff=[100.000000,100.000000,]
 
-Finish getOptimalSolutionRAC with time 4.119203 seconds
+Finish getApproximateSolutionRAC with time 4.349710 seconds
 
-Finish getApproximateSolutionRAC with time 3.964838 seconds
+status=Solved
 
-Finish RACSchedule with time 34.337778 seconds
+Finish getOptimalSolutionRAC with time 1.553597 seconds
 
-Finish RelaxedRACSchedule for NUM with time 43.051168 seconds
+status=Solved
 
-Finish getApproximateSolutionRAC_given_rate with time 1.533494 seconds
+Finish RACSchedule with time 8.078016 seconds
 
-Finish RelaxedRACSchedule for feasibility fulfilling with time 43.213508 seconds
+Finish RelaxedRACSchedule_old for NUM with time 8.664125 seconds
 
-Finish LDF with time 42.910043 seconds
+Finish RelaxedRACSchedule2 for NUM with time 7.929151 seconds
 
-Finish EPDF with time 45.608802 seconds
+Finish LDF with time 8.680707 seconds
 
-Finish LLDF with time 44.141576 seconds
+Finish EPDF with time 9.357071 seconds
 
- mean_delta_utility_RAC=-0.008797 
- mean_delta_utility_RAC_approx=-0.020805
- mean_delta_RAC=0.000000  
- mean_delta_LLDF=0.004827 
- mean_delta_LDF=0.002371 
- mean_delta_RAC_approx=0.000000 
- mean_delta_EPDF=0.002165
+Finish LLDF with time 8.848772 seconds
 
-Finish this instance with time 263.344513 seconds
+ mean_delta_utility_RAC=-0.002022 
+ mean_delta_utility_RAC_approx_old=0.015882 
+ mean_delta_utility_RAC_approx2=0.004750 
+ mean_delta_utility_RAC_approx=0.004750
+ 
+ mean_delta_RAC=0.006191  
+ mean_delta_LLDF=0.000000 
+ mean_delta_LDF=0.002466 
+ mean_delta_RAC_approx_old=0.023853 
+ mean_delta_RAC_approx2=0.008723 
+ mean_delta_RAC_approx=0.008723 
+ mean_delta_EPDF=0.006935
+
+Finish this instance with time 57.960118 seconds

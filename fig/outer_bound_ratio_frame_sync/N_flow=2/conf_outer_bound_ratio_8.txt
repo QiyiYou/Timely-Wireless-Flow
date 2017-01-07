@@ -1,0 +1,9 @@
+N_flow=2, N_lambda_instance=1
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 4, 0.923230, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 4, 0.923230, 1.000000)
+lambda=[1.000000, 1.000000, ]
+x=0.249782, r0_opt=0.249887, ratio=1.000418
+elapsed time  1.908806 seconds
+ration=[1.000418,1.000418,]

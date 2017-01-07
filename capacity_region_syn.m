@@ -1,5 +1,10 @@
 clear all; close all; 
 
+cvx_solver gurobi_3  %for LP
+%cvx_solver SDPT3  %for convex
+%cvx_solver SeDuMi 
+cvx_save_prefs
+cvx_precision best
 
 n_flow = 2;
 
@@ -118,7 +123,7 @@ ylabel('R2','FontSize', font_size, 'FontName', 'Arial');
 xlim([0.2,0.4]);
 ylim([0.2,0.4]);
 %set(gca, 'XTickLabel', num2str(get(gca,'XTick')','%f'));
-hl=legend('$$\mathcal{R}$$ in (10)','Hou[2]', '$$\mathcal{R}^{\mathrm{outer}}$$ in (13)','Location','Northeast');
+hl=legend('$$\mathcal{R}$$ in (11)','Hou[2]', '$$\mathcal{R}^{\mathrm{outer}}$$ in (15)','Location','Northeast');
 set(hl, 'Interpreter','latex');
 box on;
 grid on;

@@ -1,0 +1,16 @@
+N_flow=3, N_lambda_instance=1
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 1, 1, 0.800000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 1, 1, 0.800000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.004000, r0_opt=0.004000, ratio=1.000000
+
+n_flow=3
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.800000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.800000, 1.000000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.800000, 1.000000)
+lambda=[100.000000, 100.000000, 100.000000, ]
+x=0.002667, r0_opt=0.002667, ratio=1.000000
+
+ration=[1.000000,1.000000,1.000000,]

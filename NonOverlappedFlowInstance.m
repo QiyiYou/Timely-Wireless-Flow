@@ -483,15 +483,7 @@ classdef NonOverlappedFlowInstance < handle
             probability_temp = rand;
             next_state = -1;
             for ss=1:obj.n_state
-                if(ss == 1)
-                    if(probability_temp <= sum(next_state_prob(1)))
-                        next_state = 1;
-                        break;
-                    end
-                end
-                % ss >= 2
-                if( probability_temp <= sum(next_state_prob(1:ss))  && ...
-                        probability_temp > sum(next_state_prob(1:ss-1)))
+                if( probability_temp <= sum(next_state_prob(1:ss)))
                     next_state = ss;
                     break;
                 end

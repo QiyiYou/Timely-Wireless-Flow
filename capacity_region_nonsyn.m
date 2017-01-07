@@ -117,7 +117,7 @@ ylabel('R2','FontSize', font_size, 'FontName', 'Arial');
 %max_rate = max(max(max(Rec_optimal_throughput_per_flow)),max(max(Rec_optimal_throughput_per_flow_approx)));
 xlim([0.2,0.4]);
 ylim([0.2,0.4]);
-hl=legend('$$\mathcal{R}$$ in (10)', '$$\mathcal{R}^{\mathrm{outer}}$$ in (13)','Location','Northeast');
+hl=legend('$$\mathcal{R}$$ in (11)', '$$\mathcal{R}^{\mathrm{outer}}$$ in (15)','Location','Northeast');
 set(hl, 'Interpreter','latex');
 box on;
 grid on;

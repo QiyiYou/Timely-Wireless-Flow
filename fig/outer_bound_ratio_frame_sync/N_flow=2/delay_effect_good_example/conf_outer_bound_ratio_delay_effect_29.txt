@@ -1,0 +1,125 @@
+N_flow=2, success_prob=0.50
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 1, 1, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 1, 1, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.002500, r0_opt=0.002500, ratio=1.000000
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.002500, r0_opt=0.002500, ratio=1.000000
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 3, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 3, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.002292, r0_opt=0.002500, ratio=1.090909
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 4, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 4, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.002031, r0_opt=0.002188, ratio=1.076923
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 5, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 5, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.001781, r0_opt=0.001875, ratio=1.052632
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 6, 6, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 6, 6, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.001563, r0_opt=0.001615, ratio=1.033333
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 7, 7, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 7, 7, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.001378, r0_opt=0.001406, ratio=1.020243
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 8, 8, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 8, 8, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.001226, r0_opt=0.001240, ratio=1.011952
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 9, 9, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 9, 9, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.001099, r0_opt=0.001107, ratio=1.006910
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 10, 10, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 10, 10, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000994, r0_opt=0.000998, ratio=1.003929
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 11, 11, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 11, 11, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000906, r0_opt=0.000908, ratio=1.002204
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 12, 12, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 12, 12, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000832, r0_opt=0.000833, ratio=1.001223
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 13, 13, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 13, 13, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000769, r0_opt=0.000769, ratio=1.000672
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 14, 14, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 14, 14, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000714, r0_opt=0.000714, ratio=1.000366
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 15, 15, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 15, 15, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000666, r0_opt=0.000667, ratio=1.000198
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 16, 16, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 16, 16, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000625, r0_opt=0.000625, ratio=1.000107
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 17, 17, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 17, 17, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000588, r0_opt=0.000588, ratio=1.000048
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 18, 18, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 18, 18, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000556, r0_opt=0.000556, ratio=1.000008
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 19, 19, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 19, 19, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000526, r0_opt=0.000526, ratio=1.000009
+
+n_flow=2
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 20, 20, 0.500000, 1.000000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 20, 20, 0.500000, 1.000000)
+lambda=[100.000000, 100.000000, ]
+x=0.000500, r0_opt=0.000500, ratio=0.999995
+
+Rec_ratio=[1.000000,1.000000,1.090909,1.076923,1.052632,1.033333,1.020243,1.011952,1.006910,1.003929,1.002204,1.001223,1.000672,1.000366,1.000198,1.000107,1.000048,1.000008,1.000009,0.999995,]
+
+Rec_ratio_theoretic=[1.000000,1.000000,1.090909,1.076923,1.052632,1.033333,1.020243,1.011952,1.006910,1.003929,1.002204,1.001223,1.000672,1.000366,1.000198,1.000107,1.000057,1.000031,1.000016,1.000009,]
