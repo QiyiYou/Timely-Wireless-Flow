@@ -415,7 +415,7 @@ classdef NonOverlappedFlowInstance < handle
                 elseif(state == 2) % has one packet, i.e. state = 2
                     isTransmitted = 1;
                     transmission_probability_temp = rand;
-                    if(transmission_probability_temp < obj.success_prob) % the tranmission is successful with prob success_prob
+                    if(transmission_probability_temp <= obj.success_prob) % the tranmission is successful with prob success_prob
                         isSuccessful = 1;
                         %we need carefully get the next state, this is ugly
                         %here because we need to re-implement the
@@ -429,14 +429,15 @@ classdef NonOverlappedFlowInstance < handle
                         %consider the arrival, come to the beginning of the
                         %next slot, i.e., t+1 
 
-                        if(t >= obj.offset && obj.getFirstPeriodSlot(t+obj.period) == obj.period ) % next slot arrival prob!! in the last slot of one period, thus will have arrival in the next slot (the new period)
+                        if(t > obj.offset && obj.getFirstPeriodSlot(t+obj.period) == obj.period ) % next slot arrival prob!! in the last slot of one period, thus will have arrival in the next slot (the new period)
                             arrival_prob_temp = rand;
-                            if(arrival_prob_temp < obj.arrival_prob)
+                            if(arrival_prob_temp <= obj.arrival_prob)
                                 next_state = 2; %has one arrival
                             else
                                 next_state = 1;
                             end
                         end
+                        %next_state = obj.oneSlotRealizationOnlyForState(t, state, action);
                     else % the transimission is failed
                         isSuccessful = -1;
                         %we need carefully get the next state, this is ugly
@@ -449,15 +450,16 @@ classdef NonOverlappedFlowInstance < handle
                              next_state = 1;
                             %consider the arrival, come to the beginning of the
                             %next slot, i.e., t+1
-                            if(t >= obj.offset && obj.getFirstPeriodSlot(t+obj.period) == obj.period ) % next slot arrival prob!!
+                            if(t > obj.offset && obj.getFirstPeriodSlot(t+obj.period) == obj.period ) % next slot arrival prob!!
                                 arrival_prob_temp = rand;
-                                if(arrival_prob_temp < obj.arrival_prob)
+                                if(arrival_prob_temp <= obj.arrival_prob)
                                     next_state = 2; %has one arrival
                                 else
                                     next_state = 1;
                                 end
                             end
                         end
+                       % next_state = obj.oneSlotRealizationOnlyForState(t, state, action);
                     end
                 else
                     error('wrong input');

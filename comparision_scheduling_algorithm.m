@@ -126,11 +126,9 @@ for instance=1:1
     cummean_successful_transmission_RAC_approx = cummean(successful_transmission_RAC_approx,2);
     
     throughput_per_flow_RAC = cummean_successful_transmission_RAC(:,end)
-    throughput_per_flow_RAC_approx = cummean_successful_transmission_RAC_approx(:,end)
-    
-    gap = sum(abs(throughput_per_flow_RAC - optimal_throughput_per_flow_RAC))
-    
+    throughput_per_flow_RAC_approx = cummean_successful_transmission_RAC_approx(:,end)    
 end
+
 
 save(sprintf('%s/comparision_scheduling_flow_.mat',filePath));
 %load('fig/comparision_scheduling_policies/n_flow=3/comparision_scheduling_flow_.mat');

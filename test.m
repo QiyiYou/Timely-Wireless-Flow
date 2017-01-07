@@ -1,151 +1,105 @@
 clear all; close all;
 
-cvx_solver gurobi_3  %for LP
-%cvx_solver SDPT3  %for convex
-%cvx_solver SeDuMi
+
+%select gurobi to solve the LP, much faster than the default SDP3
+%cvx_solver gurobi_2
+%cvx_solver SDPT3
+cvx_solver SeDuMi
 cvx_save_prefs
 cvx_precision best
 
-
-D_vec = 1:10
-Rec_ratio = zeros(size(D_vec));
-
-p = 0.1;
 n_flow = 2;
 
-for dd=1:length(D_vec)
-    D = D_vec(dd)
+
+flow1 = NonOverlappedFlowInstance();
+flow1.offset = 0;
+% flow1.period = randi([2,5]);
+% flow1.delay = randi([1, flow1.period]);
+% flow1.arrival_prob = randi([50,100])/100;
+% flow1.success_prob = randi([50,100])/100;
+flow1.period = 2;
+flow1.delay = 2;
+flow1.arrival_prob = 1;
+flow1.success_prob = 0.5;
+flow1.constructEverything();
+
+flow2 = NonOverlappedFlowInstance();
+flow2.offset = 0;
+% flow2.period = randi([2,5]);
+% flow2.delay = randi([1, flow1.period]);
+% flow2.arrival_prob = randi([50,100])/100;
+% flow2.success_prob = randi([50,100])/100;
+flow2.period = 2;
+flow2.delay = 2;
+flow2.arrival_prob = 1;
+flow2.success_prob = 0.5;
+flow2.constructEverything();
+
+
+
+flow_array = cell(n_flow,1);
+flow_array{1} = flow1;
+flow_array{2} = flow2;
+
+
+obj = DownlinkAPInstance();
+obj.n_flow = n_flow;
+obj.flow_array = flow_array;
+obj.constructEverything();
+obj.stateSanityCheck();
+
+%utility_coeff =  [1,1,1];
+utility_coeff =  [1,1];
+utility_coeff = utility_coeff./sum(utility_coeff);
+utility_form = 'weighted_log_sum';
+
+
+tic;
+[optimal_policy_RAC, optimal_utility_RAC, optimal_throughput_per_flow_RAC, status] = ...
+    getOptimalSolutionRAC_v(obj, utility_coeff, utility_form);
+fprintf('\nFinish getOptimalSolutionRAC with time %f seconds\n', toc);
+
+optimal_throughput_per_flow_RAC
+
+tic;
+[optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx, optimal_utility_RAC_approx, optimal_throughput_per_flow_RAC_approx, status] = ...
+    getApproximateSolutionRAC(obj, utility_coeff, utility_form);
+fprintf('\nFinish getApproximateSolutionRAC with time %f seconds\n', toc);
+
+
+epsilon = 0;
+%strict_throughput_per_flow = max(throughput_per_flow - epsilon, 0);
+% let us use optimal throughput from RAC optmization problem
+strict_throughput_per_flow = max(optimal_throughput_per_flow_RAC - epsilon, 0);
+
+N_instance = 100;
+throughput_per_flow_RAC = zeros(2,N_instance);
+throughput_per_flow_RAC_approx = zeros(2, N_instance);
+
+for instance=1:N_instance
+    instance
+    T = 10000;
     
-    flow1 = NonOverlappedFlowInstance();
-    flow1.offset = 0;
-    flow1.period = D;
-    flow1.delay = D;
-    flow1.arrival_prob = 1;
-    flow1.success_prob = p;
-    flow1.constructEverything();
-     
-    
-    flow_array = cell(n_flow,1);
-    for kk=1:n_flow
-        flow_array{kk} = flow1;
-    end
-    
-    for ii=1:n_flow
-        fprintf( '\nFlow %d: (offset, period, delay, success_prob) = (%d, %d, %d, %f), ', ii, flow_array{ii}.offset, ...
-            flow_array{ii}.period, flow_array{ii}.delay, flow_array{ii}.success_prob);
-        fprintf( 'arrival_prob = (');
-        for jj=1:length(flow_array{ii}.arrival_prob)
-            fprintf( '%f, ', flow_array{ii}.arrival_prob(jj));
-        end
-        fprintf( ')\n');
-    end
-    
-    obj = DownlinkAPInstance();
-    obj.n_flow = n_flow;
-    obj.flow_array = flow_array;
-    obj.constructEverything();
-    obj.stateSanityCheck();
+    tic;
+    [successful_transmission_RAC, state_action_distribution_RAC, system_state_RAC, system_action_RAC, state_action_per_slot_RAC ] ...
+        = RACSchedule(obj, T, optimal_policy_RAC);
+    fprintf( '\nFinish RACSchedule with time %f seconds\n', toc);
     
     
-    utility_coeff = zeros(obj.n_flow,1);
-    coeff_vec= [0:0.05:1];
-    n_coeff_vec = length(coeff_vec);
-    Rec_optimal_utility = zeros(n_coeff_vec,1);
-    Rec_optimal_throughput_per_flow = zeros(n_coeff_vec,2);
-    Rec_optimal_utility_approx = zeros(n_coeff_vec,1);
-    Rec_optimal_throughput_per_flow_approx = zeros(n_coeff_vec,2);
-    Rec_elapsed_time_optimal = zeros(n_coeff_vec,1);
-    Rec_elapsed_time_approx = zeros(n_coeff_vec,1);
     
-    ratio = 0;
-    for nn=1:n_coeff_vec
-        uu = coeff_vec(nn);
-        utility_coeff(1) = uu;
-        utility_coeff(2) = 1-uu;
-        utility_form = 'weighted_sum';
-        tic;
-        [optimal_policy, optimal_utility, optimal_throughput_per_flow] = ...
-            getOptimalSolutionRAC_v(obj, utility_coeff, utility_form);
-        Rec_elapsed_time_optimal(nn) = toc;
-        fprintf('utility_coeff(1)=%d, Finish RAC optimization using CVX with time %f seconds\n', utility_coeff(1), Rec_elapsed_time_optimal(nn));
-        
-        tic;
-        [optimal_policy_approx, optimal_action_distribution_approx, optimal_utility_approx, optimal_throughput_per_flow_approx] = ...
-            getApproximateSolutionRAC(obj, utility_coeff, utility_form);
-        Rec_elapsed_time_approx(nn) = toc;
-        fprintf('utility_coeff(1)=%d, Finish RAC approxmiate optimization using CVX with time %f seconds\n', utility_coeff(1), Rec_elapsed_time_approx(nn));
-        
-        ratio = max(ratio, optimal_utility_approx/optimal_utility);
-        
-        Rec_optimal_utility(nn) = optimal_utility;
-        Rec_optimal_throughput_per_flow(nn,:) = optimal_throughput_per_flow;
-        
-        Rec_optimal_utility_approx(nn) = optimal_utility_approx;
-        Rec_optimal_throughput_per_flow_approx(nn,:) = optimal_throughput_per_flow_approx;
-    end
+%     tic;
+%     [successful_transmission_RAC_approx, state_action_distribution_RAC_approx, system_state_RAC_approx, system_action_RAC_approx, state_action_per_slot_RAC_approx] ...
+%         = RelaxedRACSchedule_old(obj, T, optimal_policy_RAC_approx, optimal_action_distribution_RAC_approx);
+%     fprintf( '\nFinish RelaxedRACSchedule with time %f seconds\n', toc);
+%     
+%    
     
-    ratio
-    Rec_ratio(dd) = ratio;
-    
-    %make the capacity region is complete
-    Rec_optimal_throughput_per_flow(1,1) = 0;
-    Rec_optimal_throughput_per_flow_approx(1,1) = 0;
-    Rec_optimal_throughput_per_flow(end,2) = 0;
-    Rec_optimal_throughput_per_flow_approx(end,2) = 0;
-    
-    fprintf( '\nRec_optimal_throughput_per_flow=\n');
-    for nn=1:n_coeff_vec
-        fprintf( '(%f, %f)\n', Rec_optimal_throughput_per_flow(nn,1), Rec_optimal_throughput_per_flow(nn,2));
-    end
-    
-    fprintf( '\nRec_optimal_throughput_per_flow_approx=\n');
-    for nn=1:n_coeff_vec
-        fprintf( '(%f, %f)\n', Rec_optimal_throughput_per_flow_approx(nn,1), Rec_optimal_throughput_per_flow_approx(nn,2));
-    end
-    
+    throughput_per_flow_RAC(:, instance) = mean(successful_transmission_RAC,2);
+%    throughput_per_flow_RAC_approx(:, instance) = mean(successful_transmission_RAC_approx,2);    
 end
 
-% figure;
-% font_size = 22.4;
-% line_width = 5;
-% set(gca,'FontSize',font_size);
-% hold on;
-% plot(Rec_optimal_throughput_per_flow(:,1),  Rec_optimal_throughput_per_flow(:,2), '-r', 'Linewidth', line_width);
-% plot(Rec_optimal_throughput_per_flow(:,1),  Rec_optimal_throughput_per_flow(:,2), '-.g', 'Linewidth', line_width-2);
-% plot(Rec_optimal_throughput_per_flow_approx(:,1),  Rec_optimal_throughput_per_flow_approx(:,2), ':b', 'Linewidth', line_width);
-% hold off;
-% %xlabel('$R_1$','FontSize', font_size-2, 'FontName', 'Arial', 'Interpreter', 'latex');
-% %ylabel('$R_2$','FontSize', font_size-2, 'FontName', 'Arial', 'Interpreter', 'latex');
-% xlabel('R1','FontSize', font_size, 'FontName', 'Arial');
-% ylabel('R2','FontSize', font_size, 'FontName', 'Arial');
-% %max_rate = max(max(max(Rec_optimal_throughput_per_flow)),max(max(Rec_optimal_throughput_per_flow_approx)));
-% %xlim([0.2,0.4]);
-% %ylim([0.2,0.4]);
-% %set(gca, 'XTickLabel', num2str(get(gca,'XTick')','%f'));
-% hl=legend('$$\mathcal{R}$$ in (11)','Hou[2]', '$$\mathcal{R}^{\mathrm{outer}}$$ in (15)','Location','Northeast');
-% set(hl, 'Interpreter','latex');
-% box on;
-% grid on;
-% % print(sprintf('%s/capacity_regin_syn', filePath),'-dpdf');
-% % print(sprintf('%s/capacity_regin_syn', filePath),'-depsc');
+throughput_per_flow_RAC_avg = mean(throughput_per_flow_RAC, 2);
+%throughput_per_flow_RAC_approx_avg = mean(throughput_per_flow_RAC_approx, 2);
 
-
-
-figure;
-font_size = 22.4;
-line_width = 5;
-set(gca,'FontSize',font_size);
-plot(D_vec,  Rec_ratio, '-ro', 'Linewidth', line_width);
-ylabel('ratio');
-xlabel('D (=Period)');
-title(sprintf('Frame-Synchronized: K=%d, p=%.2f', n_flow, p));
-box on;
-grid on;
-export_fig(sprintf('fig/delay_effect_K=%d_p=%.2f', n_flow, p), '-pdf','-transparent','-nocrop');
-% print(sprintf('%s/capacity_regin_syn', filePath),'-dpdf');
-% print(sprintf('%s/capacity_regin_syn', filePath),'-depsc');
-
-
-
-
+gap = sum(abs(throughput_per_flow_RAC_avg - optimal_throughput_per_flow_RAC))/sum(optimal_throughput_per_flow_RAC)
 

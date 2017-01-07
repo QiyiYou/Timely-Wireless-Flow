@@ -1,0 +1,151 @@
+n_flow=2, n_instance=1, T=10000
+====================================================================
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 2, 0.141190, 0.283736)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 3, 0.024286, 0.741326)
+
+weighted_log_sum, utility_coeff=[100.000000,100.000000,]
+
+Finish getApproximateSolutionRAC with time 4.414014 seconds
+
+status=Solved
+
+Finish getOptimalSolutionRAC with time 2.185932 seconds
+
+status=Solved
+
+Finish RACSchedule with time 8.544233 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.825677 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 8.309733 seconds
+
+Finish LDF with time 8.736685 seconds
+
+Finish EPDF with time 9.276897 seconds
+
+Finish LLDF with time 8.801277 seconds
+
+Finish RACSchedule with time 7.869908 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 9.151344 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 8.101302 seconds
+
+Finish LDF with time 8.743881 seconds
+
+Finish EPDF with time 8.950726 seconds
+
+Finish LLDF with time 8.831650 seconds
+
+Finish RACSchedule with time 7.934240 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.674397 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.792740 seconds
+
+Finish LDF with time 8.683472 seconds
+
+Finish EPDF with time 13.031528 seconds
+
+Finish LLDF with time 9.156773 seconds
+
+Finish RACSchedule with time 7.762157 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.289057 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.459684 seconds
+
+Finish LDF with time 8.483080 seconds
+
+Finish EPDF with time 8.949921 seconds
+
+Finish LLDF with time 9.071707 seconds
+
+Finish RACSchedule with time 7.661067 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.335498 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.445591 seconds
+
+Finish LDF with time 8.483006 seconds
+
+Finish EPDF with time 8.918730 seconds
+
+Finish LLDF with time 8.820636 seconds
+
+Finish RACSchedule with time 7.662786 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.272653 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.467077 seconds
+
+Finish LDF with time 8.392567 seconds
+
+Finish EPDF with time 9.035287 seconds
+
+Finish LLDF with time 8.830794 seconds
+
+Finish RACSchedule with time 7.619257 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.321308 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.399067 seconds
+
+Finish LDF with time 8.937018 seconds
+
+Finish EPDF with time 8.926842 seconds
+
+Finish LLDF with time 8.791234 seconds
+
+Finish RACSchedule with time 7.614908 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.341291 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.511821 seconds
+
+Finish LDF with time 8.402948 seconds
+
+Finish EPDF with time 8.992233 seconds
+
+Finish LLDF with time 8.863697 seconds
+
+Finish RACSchedule with time 7.670917 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.334663 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.470861 seconds
+
+Finish LDF with time 8.400208 seconds
+
+Finish EPDF with time 9.032110 seconds
+
+Finish LLDF with time 9.038614 seconds
+
+Finish RACSchedule with time 7.964245 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 8.353217 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 7.538666 seconds
+
+Finish LDF with time 8.382522 seconds
+
+Finish EPDF with time 8.949625 seconds
+
+Finish LLDF with time 8.799355 seconds
+
+ mean_delta_utility_RAC=0.000808 
+ mean_delta_utility_RAC_approx_old=0.013284 
+ mean_delta_utility_RAC_approx2=0.006449 
+ mean_delta_utility_RAC_approx=0.006449
+ 
+ mean_delta_RAC=0.007885  
+ mean_delta_LLDF=0.028042 
+ mean_delta_LDF=0.028322 
+ mean_delta_RAC_approx_old=0.104471 
+ mean_delta_RAC_approx2=0.098872 
+ mean_delta_RAC_approx=0.098872 
+ mean_delta_EPDF=0.066956
+
+Finish this instance with time 515.506240 seconds
