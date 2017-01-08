@@ -1,0 +1,13 @@
+n_flow=2, n_rate_instance=1, T=10000
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 3, 0.500000, 0.950000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 5, 0.910000, 0.900000)
+
+weighted_log_sum, utility_coeff=[1.000000,1.000000,]
+
+Finish getApproximateSolutionRAC with time 5.331340 seconds
+
+status=Solved
+
+Finish getOptimalSolutionRAC with time 1.624723 seconds
+
+status=Solved

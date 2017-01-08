@@ -1,0 +1,75 @@
+n_flow=2, n_rate_instance=3, T=1000
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 4, 0.570000, 0.560000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 3, 0.920000, 0.600000)
+
+weighted_log_sum, utility_coeff=[1.000000,1.000000,]
+
+Finish getApproximateSolutionRAC with time 5.166059 seconds
+
+status=Solved
+
+Finish getOptimalSolutionRAC with time 2.277871 seconds
+
+status=Solved
+optimal_throughput_per_flow_RAC=[0.106232,0.149797,]
+===================================================================
+rate_instance=1
+
+Finish RACSchedule with time 0.929893 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 0.921467 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 0.810760 seconds
+
+Finish LDF with time 0.887744 seconds
+
+Finish EPDF with time 0.937216 seconds
+
+Finish LLDF with time 0.917360 seconds
+===================================================================
+rate_instance=2
+
+Finish RACSchedule with time 0.814715 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 0.944548 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 0.801654 seconds
+
+Finish LDF with time 0.929015 seconds
+
+Finish EPDF with time 0.916920 seconds
+
+Finish LLDF with time 0.875761 seconds
+===================================================================
+rate_instance=3
+
+Finish RACSchedule with time 0.786113 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 0.851665 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 0.764884 seconds
+
+Finish LDF with time 0.850369 seconds
+
+Finish EPDF with time 0.900772 seconds
+
+Finish LLDF with time 0.870144 seconds
+empirical_rate_RAC=[0.109000,0.148667,]
+
+diff_utility_RAC=0.018143
+diff_utility_RAC_approx_old=-0.030454
+diff_utility_RAC_approx2=-0.073010
+diff_utility_RAC_approx=-0.073010
+delta_utility_RAC=-0.004382
+delta_utility_RAC_approx_old=0.007355
+delta_utility_RAC_approx2=0.017633
+delta_utility_RAC_approx=0.007355
+delta_LDF=0.006625
+delta_EPDF=0.000000
+delta_LLDF=0.008719
+delta_RAC=0.004416
+delta_RAC_approx_old=0.016531
+delta_RAC_approx2=0.039174
+delta_RAC_approx=0.016531
+
+Finish this instance with time 23.616997 seconds

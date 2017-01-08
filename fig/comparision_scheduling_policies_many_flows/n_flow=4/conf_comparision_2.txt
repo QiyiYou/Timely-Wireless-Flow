@@ -1,0 +1,30 @@
+n_flow=4, n_instance=1, T=10000
+====================================================================
+
+Instance 1
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.840000, 0.900000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 2, 0.930000, 0.570000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.810000, 0.650000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 2, 0.670000, 0.730000)
+
+weighted_log_sum, utility_coeff=[100.000000,100.000000,100.000000,100.000000,]
+
+Finish getApproximateSolutionRAC with time 13.514846 seconds
+
+status=Solved
+
+Finish getOptimalSolutionRAC with time 5.465723 seconds
+
+status=Solved
+
+Finish RACSchedule with time 12.979140 seconds
+
+Finish RelaxedRACSchedule_old for NUM with time 15.808756 seconds
+
+Finish RelaxedRACSchedule2 for NUM with time 13.681947 seconds
+
+Finish LDF with time 13.907691 seconds
+
+Finish EPDF with time 15.186684 seconds
+
+Finish LLDF with time 15.458824 seconds

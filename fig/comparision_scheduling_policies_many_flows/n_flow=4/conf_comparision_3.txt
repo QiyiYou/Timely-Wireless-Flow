@@ -1,0 +1,8 @@
+n_flow=4, n_rate_instance=4, T=10000
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.950000, 0.790000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 1.000000, 0.750000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 3, 0.950000, 0.630000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.740000, 0.640000)
+weighted_log_sum, utility_coeff=[1.000000,1.000000,1.000000,1.000000,]
+Finish getApproximateSolutionRAC with time 4.564162 seconds
+status=Inaccurate/Solved

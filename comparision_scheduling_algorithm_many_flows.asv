@@ -12,7 +12,7 @@ cvx_precision best
 
 
 
-n_flow=4
+n_flow=2
 filePath = sprintf('fig/comparision_scheduling_policies_many_flows/n_flow=%d',n_flow);
 
 
@@ -28,8 +28,8 @@ end
 fileID = fopen(sprintf('%s/conf_comparision_%d.txt',filePath, next_conf),'w');
 
 
-n_rate_instance=4
-T=10000
+n_rate_instance=3
+T=1000
 fprintf(fileID, 'n_flow=%d, n_rate_instance=%d, T=%d\n', n_flow, n_rate_instance, T);
 
 begin_time_stamp=tic;
@@ -195,7 +195,7 @@ fprintf(fileID, '===============================================================
 empirical_rate_LDF = mean(Rec_rate_LDF,2);
 empirical_rate_EPDF = mean(Rec_rate_EPDF,2);
 empirical_rate_LLDF = mean(Rec_rate_LLDF,2);
-empirical_rate_RAC = mean(Rec_rate_RAC,2)
+empirical_rate_RAC = mean(Rec_rate_RAC,2);
 empirical_rate_RAC_approx_old = mean(Rec_rate_RAC_approx_old,2);
 empirical_rate_RAC_approx2 = mean(Rec_rate_RAC_approx2,2);
 
@@ -257,27 +257,27 @@ delta_RAC_approx = min(delta_RAC_approx_old, delta_RAC_approx2);
 
 
 fprintf(fileID, '\n');
+
 fprintf(fileID, 'diff_utility_RAC=%f\n', diff_utility_RAC);
 fprintf(fileID, 'diff_utility_RAC_approx_old=%f\n', diff_utility_RAC_approx_old);
 fprintf(fileID, 'diff_utility_RAC_approx2=%f\n', diff_utility_RAC_approx2);
 fprintf(fileID, 'diff_utility_RAC_approx=%f\n', diff_utility_RAC_approx);
 
-fprintf(fileID, '\n');
 fprintf(fileID, 'delta_utility_RAC=%f\n', delta_utility_RAC);
 fprintf(fileID, 'delta_utility_RAC_approx_old=%f\n', delta_utility_RAC_approx_old);
 fprintf(fileID, 'delta_utility_RAC_approx2=%f\n', delta_utility_RAC_approx2);
 fprintf(fileID, 'delta_utility_RAC_approx=%f\n', delta_utility_RAC_approx);
 
-fprintf(fileID, '\n');
+
 fprintf(fileID, 'diff_LDF=%f\n', diff_LDF);
 fprintf(fileID, 'diff_EPDF=%f\n', diff_EPDF);
 fprintf(fileID, 'diff_LLDF=%f\n', diff_LLDF);
-fprintf(fileID, 'diff_RAC=%f\n', diff_RAC);
-fprintf(fileID, 'diff_RAC_approx_old=%f\n', diff_RAC_approx_old);
-fprintf(fileID, 'diff_RAC_approx2=%f\n', diff_RAC_approx2);
-fprintf(fileID, 'diff_RAC_approx=%f\n', diff_RAC_approx);
+fprintf(fileID, 'diff_RAC=%f\n', del_RAC);
+fprintf(fileID, 'diff_RAC_approx_old=%f\n', delta_RAC_approx_old);
+fprintf(fileID, 'diff_RAC_approx2=%f\n', delta_RAC_approx2);
+fprintf(fileID, 'diff_RAC_approx=%f\n', delta_RAC_approx);
 
-fprintf(fileID, '\n');
+
 fprintf(fileID, 'delta_LDF=%f\n', delta_LDF);
 fprintf(fileID, 'delta_EPDF=%f\n', delta_EPDF);
 fprintf(fileID, 'delta_LLDF=%f\n', delta_LLDF);
