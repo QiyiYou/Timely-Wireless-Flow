@@ -1,0 +1,13 @@
+n_flow=4, n_rate_instance=1, T=10000, cvx_maxiter=30 seconds
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.630000, 0.770000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 3, 0.890000, 0.860000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.580000, 0.750000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 3, 0.500000, 0.910000)
+weighted_log_sum, utility_coeff=[1.000000,1.000000,1.000000,1.000000,]
+Finish getApproximateSolutionRAC with time 4.708508 seconds
+status=Solved
+Finish getOptimalSolutionRAC with time 2.737642 seconds
+status=Solved
+optimal_throughput_per_flow_RAC=[0.156631,0.221272,0.144199,0.124309,]
+===================================================================
+rate_instance=1

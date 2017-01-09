@@ -1,0 +1,6 @@
+n_flow=4, n_rate_instance=6, T=10000, cvx_time_limit=1000 seconds
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 2, 0.890000, 0.800000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 2, 0.540000, 0.690000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.640000, 0.840000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 2, 0.880000, 0.840000)
+weighted_log_sum, utility_coeff=[1.000000,1.000000,1.000000,1.000000,]

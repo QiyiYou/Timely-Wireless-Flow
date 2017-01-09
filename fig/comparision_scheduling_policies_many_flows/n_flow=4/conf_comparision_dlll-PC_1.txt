@@ -1,0 +1,73 @@
+n_flow=4, n_rate_instance=4, T=10000, cvx_time_limit=1000 seconds
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 3, 1.000000, 0.760000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 3, 0.720000, 0.760000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 2, 0.590000, 0.520000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.670000, 0.820000)
+weighted_log_sum, utility_coeff=[1.000000,1.000000,1.000000,1.000000,]
+Finish getApproximateSolutionRAC with time 8.301857 seconds
+status=Solved
+Finish getOptimalSolutionRAC with time 3.405336 seconds
+status=Solved
+optimal_throughput_per_flow_RAC=[0.190000,0.198100,0.128606,0.184344,]
+===================================================================
+rate_instance=1
+Finish RACSchedule with time 14.426796 seconds
+Finish RelaxedRACSchedule_old for NUM with time 15.101364 seconds
+Finish RelaxedRACSchedule2 for NUM with time 13.403039 seconds
+Finish LDF with time 14.524929 seconds
+Finish EPDF with time 15.359106 seconds
+Finish LLDF with time 15.417379 seconds
+===================================================================
+rate_instance=2
+Finish RACSchedule with time 13.217883 seconds
+Finish RelaxedRACSchedule_old for NUM with time 14.870484 seconds
+Finish RelaxedRACSchedule2 for NUM with time 13.260033 seconds
+Finish LDF with time 14.445439 seconds
+Finish EPDF with time 15.110946 seconds
+Finish LLDF with time 15.283680 seconds
+===================================================================
+rate_instance=3
+Finish RACSchedule with time 13.108329 seconds
+Finish RelaxedRACSchedule_old for NUM with time 15.356946 seconds
+Finish RelaxedRACSchedule2 for NUM with time 13.257658 seconds
+Finish LDF with time 14.262444 seconds
+Finish EPDF with time 15.114388 seconds
+Finish LLDF with time 15.395862 seconds
+===================================================================
+rate_instance=4
+Finish RACSchedule with time 13.070585 seconds
+Finish RelaxedRACSchedule_old for NUM with time 14.876000 seconds
+Finish RelaxedRACSchedule2 for NUM with time 13.264283 seconds
+Finish LDF with time 14.273278 seconds
+Finish EPDF with time 15.122480 seconds
+Finish LLDF with time 15.270170 seconds
+===================================================================
+empirical_rate_RAC=[0.189775,0.201400,0.125875,0.181950,]
+
+diff_utility_RAC=-0.019197
+diff_utility_RAC_approx_old=-0.103135
+diff_utility_RAC_approx2=-0.093563
+diff_utility_RAC_approx=-0.103135
+
+delta_utility_RAC=0.002734
+delta_utility_RAC_approx_old=0.014688
+delta_utility_RAC_approx2=0.013325
+delta_utility_RAC_approx=0.013325
+
+diff_LDF=0.034499
+diff_EPDF=0.022031
+diff_LLDF=0.012756
+diff_RAC=0.005350
+diff_RAC_approx_old=0.033418
+diff_RAC_approx2=0.030468
+diff_RAC_approx=0.030468
+
+delta_LDF=0.049211
+delta_EPDF=0.031425
+delta_LLDF=0.018195
+delta_RAC=0.007631
+delta_RAC_approx_old=0.047669
+delta_RAC_approx2=0.043461
+delta_RAC_approx=0.043461
+
+Finish this instance with time 359.165182 seconds

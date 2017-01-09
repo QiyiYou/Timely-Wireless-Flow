@@ -1,0 +1,8 @@
+n_flow=6, n_rate_instance=4, T=10000
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 2, 0.730000, 0.950000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 4, 0.860000, 0.840000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 2, 0.670000, 0.650000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 3, 2, 0.930000, 0.810000)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 4, 0.700000, 0.520000)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 4, 0.540000, 0.570000)
+weighted_log_sum, utility_coeff=[1.000000,1.000000,1.000000,1.000000,1.000000,1.000000,]

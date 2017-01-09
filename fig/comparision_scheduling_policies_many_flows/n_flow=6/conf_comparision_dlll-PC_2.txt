@@ -1,0 +1,10 @@
+n_flow=6, n_rate_instance=6, T=10000, cvx_time_limit=1 seconds
+Flow 1: (offset, period, delay, success_prob, arrival_prob) = (0, 2, 2, 0.630000, 0.550000)
+Flow 2: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 5, 0.620000, 0.630000)
+Flow 3: (offset, period, delay, success_prob, arrival_prob) = (0, 5, 2, 0.960000, 0.790000)
+Flow 4: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 2, 0.580000, 0.820000)
+Flow 5: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 4, 0.800000, 0.750000)
+Flow 6: (offset, period, delay, success_prob, arrival_prob) = (0, 4, 4, 0.650000, 1.000000)
+weighted_log_sum, utility_coeff=[1.000000,1.000000,1.000000,1.000000,1.000000,1.000000,]
+Finish getApproximateSolutionRAC with time 26.499438 seconds
+status=Inaccurate/Solved
